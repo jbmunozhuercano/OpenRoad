@@ -1,0 +1,680 @@
+/*
+-Colores:
+Azul: 11749a
+Rojo: 981235
+Verde: 08a677
+
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Oswald|Roboto);
+/* Estilos generales */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 100%;
+}
+
+body,input,textarea {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #08a677;
+}
+
+p {
+    font-size: 1em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Oswald', sans-serif;
+}
+
+h1 {
+    font-size: 4.236em;
+    letter-spacing: 0.1em;
+}
+
+h2 {
+    font-size: 2.618em;
+    letter-spacing: 0.15em;
+}
+
+h3 {
+    font-size: 1.618em;
+    letter-spacing: 0.3em;
+}
+/* Fin de los estilos generales */
+/* Imágenes paralaje */
+
+body div#primerFondo {
+    background-image: url('../img/background-01.jpg');
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+body div#segundoFondo {
+    background-image: url('../img/background-02.jpg');
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+body div#tercerFondo {
+    background-image: url('../img/background-03.jpg');
+}
+/* Fin de los estilos de imagenes paralaje */
+/* Estilos del div inicio */
+
+div.content-a > div {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+div.content-a div#logoOpenRoad {
+    background: url('../img/sprite-openroad.png') 0px 0px no-repeat;
+    width: 400px;
+    height: 124px;
+    display: block;
+    margin: 20px auto;
+}
+
+div.content-a div#menuMovil {
+    background-color: #11749a;
+    position: relative;
+    width: 89%;
+    height: 25px;
+    margin: 0px 5%;
+    display: none;
+    border: 2px solid #11749a;
+    border-radius: 10px;
+}
+
+div#menuMovil > ul > li {
+    float: right;
+    margin: 4px 10px;
+    cursor: pointer;
+}
+
+div#menuMovil ul ul {
+    position: absolute;
+    z-index: 99999;
+    right: 8px;
+    top: 35px;
+    background-color: rgba(17, 116, 154,0.7);
+    text-align: right;
+    border: 1px solid #11749a;
+    border-radius: 10px;
+}
+
+div#menuMovil ul ul li {
+    margin: 20px 10px;
+}
+
+div.content-a div#menu {
+    width: 100%;
+    display: table;
+    text-align: center;
+    height: 50px;
+}
+
+div.content-a div#menu ul {
+    display: table-cell;
+    vertical-align: middle;
+    border-bottom: 2px solid white;
+}
+
+div.content-a div#menu li {
+    display: inline;
+    padding: 0px 5%;
+}
+
+div.content-a div#menuMovil a,
+div.content-a div#menuMovil > ul > li,
+div.content-a div#menu a {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+}
+
+div#menu li a#activa,
+div#menuMovil li a#activa {
+    color: #981235;
+}
+
+div.content-a div#textoIzq,
+div.content-a div#textoDer {
+    float: left;
+    margin: 50px 0px 25px 0px;
+    text-shadow: 2.5px 4.33px 5px rgba(0, 0, 0, 0.75);
+}
+
+div.content-a div#textoIzq {
+    width: 66%;
+    margin-right: 2%;
+}
+
+div.content-a div#textoDer {
+    width: 20%;
+}
+
+div.content-a div#textoIzq h1 {
+    text-transform: uppercase;
+    line-height: 1.1em;
+}
+
+div.content-a div#textoDer p#parrafoSup,
+div.content-a div#textoDer p#parrafoInf {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    line-height: 1em;
+}
+
+div.content-a div#textoIzq h1 {
+    font-weight: bold;
+    color: #981235;
+    text-align: right;
+}
+
+div.content-a div#textoDer p#parrafoSup {
+    margin-top: 5px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.618em;
+    color: #08a677;
+    /*letter-spacing: 0.25em;*/
+}
+
+div.content-a div#textoDer p#parrafoInf {
+    padding-top: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.618em;
+    font-weight: bold;
+    letter-spacing: 0.3em;
+}
+
+div#textoDer p#parrafoInf span {
+    font-size: 2.618em;
+    line-height: 1em;
+}
+
+div.content-a div#scroll {
+    clear: both;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+div.content-a div#scroll div {
+    background: url('../img/sprite-openroad.png') -300px -125px no-repeat;
+    width: 40px;
+    height: 75px;
+    margin: 0 auto;
+    display: block;
+    clear: both;
+}
+
+div#scroll li {
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+}
+
+div#scroll li a {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+/* Iconos sociales */
+
+div#scroll li a#twitter {
+    background: url('../img/sprite-openroad.png') -150px -125px no-repeat;
+}
+
+div#scroll li a#facebook {
+    background: url('../img/sprite-openroad.png') -200px -125px no-repeat;
+}
+
+div#scroll li a#twitter:hover {
+    background: url('../img/sprite-openroad.png') -150px -175px no-repeat;
+}
+
+div#scroll li a#facebook:hover {
+    background: url('../img/sprite-openroad.png') -200px -175px no-repeat;
+}
+/* Fin de los estilos de inicio */
+
+div#servicios > div {
+    position: relative;
+    height: 1080px;
+}
+
+body > section:nth-child(4) {
+    background-color: #007399;
+}
+
+#servicios > div > div:nth-child(1) {
+    background-color: #a61138;
+    width: 32%;
+    height: 330px;
+    margin-right: 68%;
+    display: block;
+}
+
+div.content-a div.tituloSeccion {
+    width: inherit;
+    color: #000;
+    text-align: center;
+    top: 0px;
+    margin: 100px 0 105px 0;
+}
+
+div#servicios div.tituloSeccion {
+    position: absolute;
+}
+
+div#servicios div.tituloSeccion a {
+    color: #007399;
+}
+
+div#servicios div.tituloSeccion a:hover {
+    color: #08a677;
+}
+
+div.content-a div.tituloSeccion h2 {
+    color: #981235;
+    margin-bottom: 20px;
+}
+
+div.content-a div.tituloSeccion p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 120%;
+    letter-spacing: 0.15em;
+    line-height: 1.25em;
+}
+
+div#servicios div.serviciosWeb {
+    float: left;
+    width: 32%;
+    height: 420px;
+    text-align: center;
+}
+
+#servicios > div > div:nth-child(1),
+#servicios > div > div:nth-child(3),
+#servicios > div > div:nth-child(4),
+#servicios > div > div:nth-child(5),
+#servicios > div > div:nth-child(6) {
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+div#servicios > div > div:nth-child(3) {
+    background-color: #a61138;
+    border-radius: 0 0 0 50px;
+}
+
+div#servicios > div > div:nth-child(4) {
+    margin: 0 1%;
+    background-color: #007399;
+}
+
+div#servicios > div > div:nth-child(5) {
+    background-color: #08a677;
+    border-radius: 0 50px 0 0;
+}
+
+div#servicios div.serviciosWeb div#webBasico,
+div#servicios div.serviciosWeb div#wordPress,
+div#servicios div.serviciosWeb div#tiendaOnline {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+div#servicios div.serviciosWeb div#webBasico {
+    background: url('../img/sprite-openroad.png') 0px -225px no-repeat;
+}
+
+div#servicios div.serviciosWeb div#wordPress {
+    background: url('../img/sprite-openroad.png') -100px -225px no-repeat;
+}
+
+div#servicios div.serviciosWeb div#tiendaOnline {
+    background: url('../img/sprite-openroad.png') -200px -225px no-repeat;
+}
+
+div#servicios div.serviciosWeb h3 {
+    margin: 20px 0;
+}
+
+div#servicios div.serviciosWeb p {
+    font-size: 105%;
+    line-height: 1.15em;
+    padding: 0 10px;
+}
+
+div#proyectos div.tituloSeccion h2 {
+    color: #08a677;
+}
+
+div#proyectos div.tituloSeccion p {
+    color: #fff;
+}
+
+div#servicios > div > div:nth-child(6) {
+    clear: both;
+    background-color: #08a677;
+    width: 32%;
+    height: 330px;
+    margin-left: 66%;
+    display: block;
+    position: absolute;
+    top: 750px;
+}
+
+/* Comienzo estilos sección Proyectos */
+
+div#nuestrosProyectos {
+    width: 100%;
+    height: 320px;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+div#nuestrosProyectos > div {
+    width: 100%;
+    position: absolute;
+    background-color: #007399;
+} 
+
+#nuestrosProyectos > div div {
+    width: 490px;
+    height: 320px;
+    float: left;
+}
+
+#nuestrosProyectos > div:nth-child(1) > div:nth-child(1) {
+    background: url('../img/sprite-openroad.jpg') 0px 0px no-repeat;
+}
+
+#nuestrosProyectos > div:nth-child(2) > div:nth-child(1) { 
+    background: url('../img/sprite-openroad.jpg') -490px 0px no-repeat;
+}
+
+#nuestrosProyectos > div:nth-child(3) > div:nth-child(1) {
+    background: url('../img/sprite-openroad.jpg') -980px 0px no-repeat;
+}
+
+#nuestrosProyectos > div:nth-child(4) > div:nth-child(1) {
+    background: url('../img/sprite-openroad.jpg') 0px -320px no-repeat;
+}
+
+#nuestrosProyectos > div:nth-child(5) > div:nth-child(1) {
+    background: url('../img/sprite-openroad.jpg') -490px -320px no-repeat;
+}
+
+#nuestrosProyectos > div:nth-child(6) > div:nth-child(1) {
+    background: url('../img/sprite-openroad.jpg') -980px -320px no-repeat;
+}
+
+div#nuestrosProyectos h3 {
+    color: #08a677;
+    letter-spacing: normal;
+    margin: 20px 0 0 20px;
+}
+
+div#nuestrosProyectos p {
+    margin: 20px;
+}
+
+div.galeriaProyectos {
+    display: block;
+    width: 150px;
+    height: 150px;
+    float: left;
+}
+
+div.galeriaProyectos:hover {
+    outline: 5px solid #08a677;
+}
+
+#proyectos > div > div:nth-child(3) div {
+    margin-bottom: 60px;
+}
+
+#proyectos > div > div:nth-child(3) > div:nth-child(1) {
+    margin-right: 10px;
+}
+
+#proyectos > div > div:nth-child(3) > div:nth-child(6) {
+    margin-left: 10px;
+}
+
+#proyectos > div > div:nth-child(3) > div:nth-child(2),
+#proyectos > div > div:nth-child(3) > div:nth-child(3),
+#proyectos > div > div:nth-child(3) > div:nth-child(4),
+#proyectos > div > div:nth-child(3) > div:nth-child(5) {
+    margin: 0 10px;
+}
+
+#proyectos > div > div:nth-child(3) > div:nth-child(1) {
+    background: url('../img/sprite-openroad.jpg') 0px -640px no-repeat;
+}
+
+#proyectos > div > div:nth-child(3) > div:nth-child(2) {
+    background: url('../img/sprite-openroad.jpg') -150px -640px no-repeat;
+}
+
+#proyectos > div > div:nth-child(3) > div:nth-child(3) {
+    background: url('../img/sprite-openroad.jpg') -300px -640px no-repeat;
+}
+
+#proyectos > div > div:nth-child(3) > div:nth-child(4) {
+    background: url('../img/sprite-openroad.jpg') -450px -640px no-repeat;
+}
+
+#proyectos > div > div:nth-child(3) > div:nth-child(5) {
+    background: url('../img/sprite-openroad.jpg') -600px -640px no-repeat;
+}
+
+#proyectos > div > div:nth-child(3) > div:nth-child(6) {
+    background: url('../img/sprite-openroad.jpg') -750px -640px no-repeat;
+}
+/* Inicio de estilo de la sección Contacto */
+
+div#contacto div#googleMap {
+    width: 1000px;
+    height:  300px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+div#contacto form,
+div#contacto div#datosContacto {
+    float: left;
+}
+
+div#contacto form {
+    width: 660px;
+    margin-right: 20px;
+}
+
+div#contacto form input,
+div#contacto form textarea {
+    border: none;
+    background-color: #cbcbcb;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+div#contacto form input[type="text"],
+div#contacto form input[type="email"],
+div#contacto form textarea {
+    font-size: 1em;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: #a61138;
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color: #a61138;
+   opacity: 1;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color: #a61138;
+   opacity: 1;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+   color: #a61138;
+}
+
+div#contacto form input {
+    height: 30px;
+}
+
+div#contacto form input#email {
+    float: right;
+}
+
+div#contacto form input#nombre,
+div#contacto form input#email {
+    width: 315px;
+    padding-left: 5px;
+}
+
+div#contacto form textarea {
+    height: 200px;
+    padding-top: 5px;
+}
+
+div#contacto form input#asunto,
+div#contacto form textarea {
+    display: block;
+    width: 99.24242424%;
+    padding-left: 0.757575757%;
+}
+
+div#contacto form input[type="submit"] {
+    background-color: #007399;
+    display: block;
+    width: 100%;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+div#contacto div#datosContacto {
+    width: 320px;
+}
+
+div#contacto div#datosContacto,
+div#contacto div#datosContacto a {
+    color: #000;
+}
+
+div#contacto div#datosContacto h3 {
+    font-size: 1.3em;
+    color: #a61138;
+    margin: 10px;
+}
+
+div#contacto div#datosContacto p {
+    font-size: 1.05em;
+    margin: 20px 10px;
+}
+
+div#contacto div#pie {
+    height: 60px;
+    clear: both;
+    background-color: #007399;
+    text-align: center;
+    padding: 20px;
+}
+
+div#contacto div#pie p:nth-child(2) {
+    margin: 20px;
+}
+
+/* 
+Inicio de las media queries 
+
+*/
+
+
+@media screen and (min-width: 801px) and (max-width: 1000px) {
+    
+    div.content-a > div {
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    div#inicio div#menu {
+        width: 90%;
+        margin: 0 5%;
+    }
+    
+    div#contacto div#googleMap {
+        width: 80%;
+        margin: 10px 10%;
+    }
+    
+    div#contacto form { 
+        width: 80%;
+        margin: 10px 10%;
+    }
+    
+}
+
+@media screen and (max-width: 800px) {
+    
+    div.content-a > div {
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    div#inicio div#menu {
+        display: none;
+    } 
+    
+    div#inicio div#menuMovil {
+        display: block;
+    }
+    
+    div#menuMovil ul ul {
+        display: none;
+    }
+    
+    div#inicio div#textoIzq {
+        width: 90%;
+        margin: 20px 5%;
+    }
+    
+    div#inicio div#textoIzq h1 {
+        text-align: left;
+    }
+    
+    div.content-a div#textoIzq,
+    div.content-a div#textoDer {
+        float: none;
+    }
+    
+}
