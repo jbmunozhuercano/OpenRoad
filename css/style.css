@@ -1,0 +1,182 @@
+/* Hoja de estilos CSS */
+
+/*
+-Colores:
+Azul: 11749a
+Rojo: 981235
+Verde: 08a677
+
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Oswald|Roboto);
+/* Estilos generales */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 100%;
+}
+
+body,input,textarea {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #08a677;
+}
+
+p {
+    font-size: 1em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Oswald', sans-serif;
+}
+
+h1 {
+    font-size: 4.236em;
+    letter-spacing: 0.1em;
+}
+
+h2 {
+    font-size: 2.618em;
+    letter-spacing: 0.15em;
+}
+
+h3 {
+    font-size: 1.618em;
+    letter-spacing: 0.3em;
+}
+/* Fin de los estilos generales */
+/* Imágenes paralaje */
+
+body div#primerFondo {
+    background-image: url('../img/background-01.jpg');
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+body div#segundoFondo {
+    background-image: url('../img/background-02.jpg');
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+body div#tercerFondo {
+    background-image: url('../img/background-03.jpg');
+}
+/* Fin de los estilos de imagenes paralaje */
+
+div.content-a div#logoOpenRoad {
+    background: url('../img/sprite-openroad.png') 0px 0px no-repeat;
+    width: 400px;
+    height: 124px;
+    display: block;
+    margin: 20px auto;
+}
+
+div.content-a div#textoIzq,
+div.content-a div#textoDer {
+    text-shadow: 2.5px 4.33px 5px rgba(0, 0, 0, 0.75);
+}
+
+div.content-a div#textoIzq h1 {
+    text-transform: uppercase;
+    line-height: 1.1em;
+}
+
+div.content-a div#textoDer p#parrafoSup,
+div.content-a div#textoDer p#parrafoInf {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    line-height: 1em;
+}
+
+div.content-a div#textoIzq h1 {
+    font-weight: bold;
+    color: #981235;
+}
+
+div.content-a div#textoDer p#parrafoSup {
+    margin-top: 5px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.618em;
+    color: #08a677;
+    /*letter-spacing: 0.25em;*/
+}
+
+div.content-a div#textoDer p#parrafoInf {
+    padding-top: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.618em;
+    font-weight: bold;
+    letter-spacing: 0.3em;
+}
+
+div#textoDer p#parrafoInf span {
+    font-size: 2.618em;
+    line-height: 1em;
+}
+
+div.content-a div#scroll {
+    clear: both;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+div.content-a div#scroll ul {
+    margin-left: 0px;
+    text-align: center;
+}
+
+div.content-a div#scroll div > div {
+    background: url('../img/sprite-openroad.png') -300px -125px no-repeat;
+    width: 40px;
+    height: 75px;
+    margin: 0 auto;
+    display: block;
+    clear: both;
+}
+
+div#scroll li {
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+}
+
+div#scroll li a {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+/* Iconos sociales */
+
+div#scroll li a#twitter {
+    background: url('../img/sprite-openroad.png') -150px -125px no-repeat;
+}
+
+div#scroll li a#facebook {
+    background: url('../img/sprite-openroad.png') -200px -125px no-repeat;
+}
+
+div#scroll li a#twitter:hover {
+    background: url('../img/sprite-openroad.png') -150px -175px no-repeat;
+}
+
+div#scroll li a#facebook:hover {
+    background: url('../img/sprite-openroad.png') -200px -175px no-repeat;
+}
+/* Fin de los estilos de inicio */
