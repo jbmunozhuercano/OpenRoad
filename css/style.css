@@ -61,6 +61,11 @@ h3 {
     font-size: 1.618em;
     letter-spacing: 0.3em;
 }
+
+p.nbsp {
+    height: 0px;
+    width: 0px;
+}
 /* Fin de los estilos generales */
 /* Imágenes paralaje */
 
@@ -78,105 +83,54 @@ body div#tercerFondo {
     background-image: url('../img/background-03.jpg');
 }
 /* Fin de los estilos de imagenes paralaje */
+div.relleno {
+    width: 33.33333333333%;
+    height: 360px;
+}
 
-div.content-a div#logoOpenRoad {
-    background: url('../img/sprite-openroad.png') 0px 0px no-repeat;
-    width: 400px;
-    height: 124px;
+div#rellenoIzq {
+    background-color: #981235;
+}
+
+div.serviciosWeb i {
+    margin: 20px;
+}
+
+div.serviciosWeb:nth-child(1) > div > div {
+    background-color: #981235;
+}
+
+div.serviciosWeb:nth-child(2) > div > div {
+    background-color: #11749a;
+}
+
+div.serviciosWeb:nth-child(3) > div > div {
+    background-color: #08a677;
+}
+
+div#rellenoDer {
+    background-color: #08a677;
+}
+
+div#proyectos {
+    background-color: #11749a;
+}
+/* Ajuste para la altura de las columnas de serviciosWeb OJO!!!*/
+#servicios > div > div:nth-child(3),
+#servicios > div > div:nth-child(3) > div:nth-child(3) > div {
+    height: 333px;
+}
+
+div#contacto div#googleMap {
+    width: 96%;
+    height: 300px;
     display: block;
-    margin: 20px auto;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
-
-div.content-a div#textoIzq,
-div.content-a div#textoDer {
-    text-shadow: 2.5px 4.33px 5px rgba(0, 0, 0, 0.75);
-}
-
-div.content-a div#textoIzq h1 {
-    text-transform: uppercase;
-    line-height: 1.1em;
-}
-
-div.content-a div#textoDer p#parrafoSup,
-div.content-a div#textoDer p#parrafoInf {
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    line-height: 1em;
-}
-
-div.content-a div#textoIzq h1 {
-    font-weight: bold;
-    color: #981235;
-}
-
-div.content-a div#textoDer p#parrafoSup {
-    margin-top: 5px;
-    font-family: 'Oswald', sans-serif;
-    font-size: 2.618em;
-    color: #08a677;
-    /*letter-spacing: 0.25em;*/
-}
-
-div.content-a div#textoDer p#parrafoInf {
-    padding-top: 10px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.618em;
-    font-weight: bold;
-    letter-spacing: 0.3em;
-}
-
-div#textoDer p#parrafoInf span {
-    font-size: 2.618em;
-    line-height: 1em;
-}
-
-div.content-a div#scroll {
-    clear: both;
-    width: 100%;
-    margin-bottom: 50px;
-}
-
-div.content-a div#scroll ul {
-    margin-left: 0px;
-    text-align: center;
-}
-
-div.content-a div#scroll div > div {
-    background: url('../img/sprite-openroad.png') -300px -125px no-repeat;
-    width: 40px;
-    height: 75px;
-    margin: 0 auto;
-    display: block;
-    clear: both;
-}
-
-div#scroll li {
-    width: 70px;
-    height: 70px;
-    display: inline-block;
-}
-
-div#scroll li a {
-    display: block;
-    width: 50px;
-    height: 50px;
-    margin: 10px;
-}
-/* Iconos sociales */
-
-div#scroll li a#twitter {
-    background: url('../img/sprite-openroad.png') -150px -125px no-repeat;
-}
-
-div#scroll li a#facebook {
-    background: url('../img/sprite-openroad.png') -200px -125px no-repeat;
-}
-
-div#scroll li a#twitter:hover {
-    background: url('../img/sprite-openroad.png') -150px -175px no-repeat;
-}
-
-div#scroll li a#facebook:hover {
-    background: url('../img/sprite-openroad.png') -200px -175px no-repeat;
-}
-/* Fin de los estilos de inicio */
+/*
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+    width: 90%;
+    height: 300px;
+}*/
