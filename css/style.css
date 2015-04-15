@@ -135,14 +135,38 @@ div#rellenoDer {
 div#proyectos {
     background-color: #11749a;
 }
+
+div#nuestrosProyectos img {
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
 /* Ajuste para la altura de las columnas de serviciosWeb OJO!!!*/
 #servicios > div > div:nth-child(3),
 #servicios > div > div:nth-child(3) > div:nth-child(3) > div {
     height: 333px;
 }
 
+#servicios > div > div:nth-child(2) > div > div > h2,
 #contacto > div > div:nth-child(1) > div > div > h2 {
     color: #981235;
+}
+
+#proyectos > div:nth-child(1) > div > div > div > h2,
+#nuestrosProyectos h3 {
+    color: #08a677;
+}
+
+div#nuestrosProyectos h3 {
+    text-align: center;
+}
+
+div#nuestrosProyectos div.proyectosDescripcion {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #981235;
+    border: 2px solid #8b0f2f;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 #contacto > div > div:nth-child(1) > div > div > p {
@@ -156,6 +180,7 @@ div#contacto div#googleMap {
     margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 input.button {
@@ -177,4 +202,47 @@ div.anchoTotal {
     background-color: #11749a;
     margin: 0;
     padding: 0;
+}
+
+div#pie > div > div > p > a {
+    margin-top: 20px;
+}
+
+div#pie > div > div > p {
+    margin: 0px;
+}
+
+div#pie div p#copyright {
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 64em) { 
+    
+    p#parrafoTituloSeccion {
+        width: 100%;
+        position: static;
+    }
+    
+    #servicios > div > div:nth-child(3),
+    #servicios > div > div:nth-child(3) > div:nth-child(3) > div {
+        height: auto;
+    }
+    
+    div.serviciosWeb:nth-child(1) > div > div,
+    div.serviciosWeb:nth-child(2) > div > div,
+    div.serviciosWeb:nth-child(3) > div > div {
+        border-radius: 20px;
+        box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    }
+
+}
+
+@media only screen and (max-width: 40.063em) {
+    
+    div#nuestrosProyectos img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
 }

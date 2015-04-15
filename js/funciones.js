@@ -130,3 +130,43 @@ function inicializarMapa() {
  }
 
 google.maps.event.addDomListener(window, 'load', inicializarMapa);
+
+/* Funciones ajueste modo pestañas en vista para móvil */
+var min = -6;
+var max = 6;
+
+function numeroAleatorio(min,max) {
+    return x = Math.floor(Math.random() * (max - min) + min);
+}
+
+function generarRotacion() {
+    var num = numeroAleatorio(min,max);
+    return transformacion = "rotate(" + num + "deg)";
+}
+
+$(document).ready(function() {
+    
+    var anchoPantalla = $(window).width();
+    var ulProyectos = $("#nuestrosProyectos > div > ul");
+    var estiloPorDefecto = "medium-block-grid-2 large-block-grid-3";
+    var estiloTabs = "tabs-content";
+    var imagenesProyecto = $("#nuestrosProyectos img.th.radius").get();
+        
+    if(anchoPantalla <= 640) {
+        ulProyectos.toggleClass(estiloTabs,estiloPorDefecto);
+    } else {
+        if(ulProyectos.hasClass(estiloTabs)) { ulProyectos.toggleClass(estiloPorDefecto,estiloTabs);}    
+    }    
+    
+    for(var i = 0; i < 6; i++ ) {
+    
+        var num = numeroAleatorio();
+        var descripcionProyecto = "#panel" + i + " > div";
+        
+        $(descripcionProyecto).css("transform",generarRotacion());
+        imagenesProyecto[i].style.transform=generarRotacion();
+    }
+
+});
+
+
