@@ -84,12 +84,29 @@ body div#tercerFondo {
 }
 /* Fin de los estilos de imagenes paralaje */
 div.relleno {
-    width: 33.33333333333%;
+    width: 33.33333%;
     height: 360px;
 }
 
 div#rellenoIzq {
     background-color: #981235;
+}
+
+p#parrafoTituloSeccion {
+    width: 200%;
+    position: absolute;
+    left: -170px;
+    color: black;
+}
+
+div#datosContacto p a,
+p#parrafoTituloSeccion a {
+    color: #11749a;
+}
+
+div#datosContacto p a:hover,
+p#parrafoTituloSeccion a:hover {
+    color: #08a677;
 }
 
 div.serviciosWeb i {
@@ -98,14 +115,17 @@ div.serviciosWeb i {
 
 div.serviciosWeb:nth-child(1) > div > div {
     background-color: #981235;
+    border-radius: 0 0 0 20px;
 }
 
 div.serviciosWeb:nth-child(2) > div > div {
     background-color: #11749a;
+    
 }
 
 div.serviciosWeb:nth-child(3) > div > div {
     background-color: #08a677;
+    border-radius: 0 20px 0 0;
 }
 
 div#rellenoDer {
@@ -121,16 +141,40 @@ div#proyectos {
     height: 333px;
 }
 
+#contacto > div > div:nth-child(1) > div > div > h2 {
+    color: #981235;
+}
+
+#contacto > div > div:nth-child(1) > div > div > p {
+    color: black;
+}
+
 div#contacto div#googleMap {
-    width: 96%;
+    width: 100%;
     height: 300px;
     display: block;
     margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
 }
-/*
-@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
-    width: 90%;
-    height: 300px;
-}*/
+
+input.button {
+    background-color: #11749a;
+    border-color: #008CBA;
+    text-transform: uppercase;
+}
+
+div#datosContacto h3 {
+    color: #981235;
+}
+
+div#datosContacto p {
+    color: black;
+}
+
+div.anchoTotal {
+    width: 100%;
+    background-color: #11749a;
+    margin: 0;
+    padding: 0;
+}
