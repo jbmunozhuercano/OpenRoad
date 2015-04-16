@@ -139,32 +139,61 @@ function numeroAleatorio(min,max) {
     return x = Math.floor(Math.random() * (max - min) + min);
 }
 
-function generarRotacion() {
+function generarEstilo() {
+    var claseGeneral = "transformacionEstilo";
     var num = numeroAleatorio(min,max);
-    return transformacion = "rotate(" + num + "deg)";
+    
+    switch(num) {
+        case 0: return claseGeneral + 0;
+            break;
+        case 1: return claseGeneral + 1;
+            break;
+        case 2: return claseGeneral + 2;
+            break;
+        case 3: return claseGeneral + 3;
+            break;
+        case 4: return claseGeneral + 4;
+            break;
+        case 5: return claseGeneral + 5;
+            break;
+        case 6: return claseGeneral + 6;
+            break;
+        case -1: return claseGeneral + 7;
+            break;
+        case -2: return claseGeneral + 8;
+            break;
+        case -3: return claseGeneral + 9;
+            break;
+        case -4: return claseGeneral + 10;
+            break;
+        case -5: return claseGeneral + 11;
+            break;
+        case -6: return claseGeneral + 12;
+            break;
+    }
 }
 
 $(document).ready(function() {
     
-    var anchoPantalla = $(window).width();
     var ulProyectos = $("#nuestrosProyectos > div > ul");
     var estiloPorDefecto = "medium-block-grid-2 large-block-grid-3";
     var estiloTabs = "tabs-content";
-    var imagenesProyecto = $("#nuestrosProyectos img.th.radius").get();
+    var anchoPantalla = $(window).width();    
         
     if(anchoPantalla <= 640) {
         ulProyectos.toggleClass(estiloTabs,estiloPorDefecto);
     } else {
-        if(ulProyectos.hasClass(estiloTabs)) { ulProyectos.toggleClass(estiloPorDefecto,estiloTabs);}    
+        if(ulProyectos.hasClass(estiloTabs)) { ulProyectos.toggleClass(estiloPorDefecto,estiloTabs);}  
     }    
     
     for(var i = 0; i < 6; i++ ) {
     
-        var num = numeroAleatorio();
         var descripcionProyecto = "#panel" + i + " > div";
+        var imagenProyecto = "#panel" + i + " img.th.radius";
         
-        $(descripcionProyecto).css("transform",generarRotacion());
-        imagenesProyecto[i].style.transform=generarRotacion();
+        $(descripcionProyecto).addClass(generarEstilo());
+        $(imagenProyecto).addClass(generarEstilo());
+        
     }
 
 });
