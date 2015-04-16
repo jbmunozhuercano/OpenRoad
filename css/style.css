@@ -83,6 +83,65 @@ body div#tercerFondo {
     background-image: url('../img/background-03.jpg');
 }
 /* Fin de los estilos de imagenes paralaje */
+div.content-a div#logoOpenRoad {
+    background: url('../img/sprite-openroad.png') 0px 0px no-repeat;
+    width: 400px;
+    height: 124px;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Inicio de los estilos del menú */
+.top-bar {
+    border-bottom: 2px solid white;
+    text-align: center;
+}
+
+.top-bar,
+.top-bar.expanded .title-area,
+.top-bar-section ul li,
+.top-bar-section li:not(.has-form) a:not(.button) {
+    background: none;
+}
+
+#menu > div > ul > li {
+    margin: 0 50px;
+}
+
+.top-bar-section {
+    display: inline-block;
+}
+
+.top-bar-section li:not(.has-form) a:not(.button) {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.3em;
+}
+
+.top-bar-section li.active:not(.has-form) a:not(.button) {
+    color: #981235;
+    background: none;
+}
+
+.top-bar-section li.active:not(.has-form) a:not(.button):hover {
+    color: #11749a;
+    background: none;
+}
+
+.top-bar-section ul li:hover:not(.has-form) > a,
+.top-bar-section li:not(.has-form) a:not(.button):hover {
+    color: #08a677;
+    background: none;
+    background-color: none;
+}
+
+#menu > div > ul > li.active {
+    color: #981235;        
+}
+/* Fin de los estilos del menú */
+
 div.relleno {
     width: 33.33333%;
     height: 360px;
@@ -90,6 +149,10 @@ div.relleno {
 
 div#rellenoIzq {
     background-color: #981235;
+}
+
+div.tituloSeccion {
+    margin: 40px 0;
 }
 
 p#parrafoTituloSeccion {
@@ -137,7 +200,7 @@ div#proyectos {
 }
 
 div#nuestrosProyectos img {
-    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 /* Ajuste para la altura de las columnas de serviciosWeb OJO!!!*/
@@ -151,9 +214,13 @@ div#nuestrosProyectos img {
     color: #981235;
 }
 
-#proyectos > div:nth-child(1) > div > div > div > h2,
 #nuestrosProyectos h3 {
     color: #08a677;
+}
+
+div#proyectos {
+    background: #11749a url("../img/textura-corcho.jpg") repeat;
+    outline: 10px solid #585858;
 }
 
 div#nuestrosProyectos h3 {
@@ -163,10 +230,102 @@ div#nuestrosProyectos h3 {
 div#nuestrosProyectos div.proyectosDescripcion {
     margin-top: 20px;
     padding: 10px;
-    background-color: #981235;
+    background: #981235 url("../img/textura-carton.jpg") repeat;
     border: 2px solid #8b0f2f;
-    border-radius: 20px;
-    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+/* Estilos para aplicar la transformación aleatoriamente con jQuery */
+.transformacionEstilo0 {
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+.transformacionEstilo1 {
+    -ms-transform: rotate(1deg);
+    -webkit-transform: rotate(1deg);
+    -moz-transform: rotate(1deg);
+    transform: rotate(1deg);
+}
+
+.transformacionEstilo2 {
+    -ms-transform: rotate(2deg);
+    -webkit-transform: rotate(2deg);
+    -moz-transform: rotate(2deg);
+    transform: rotate(2deg);
+}
+
+.transformacionEstilo3 {
+    -ms-transform: rotate(3deg);
+    -webkit-transform: rotate(3deg);
+    -moz-transform: rotate(3deg);
+    transform: rotate(3deg);
+}
+
+.transformacionEstilo4 {
+    -ms-transform: rotate(4deg);
+    -webkit-transform: rotate(4deg);
+    -moz-transform: rotate(4deg);
+    transform: rotate(4deg);
+}
+
+.transformacionEstilo5 {
+    -ms-transform: rotate(5deg);
+    -webkit-transform: rotate(5deg);
+    -moz-transform: rotate(5deg);
+    transform: rotate(5deg);
+}
+
+.transformacionEstilo6 {
+    -ms-transform: rotate(6deg);
+    -webkit-transform: rotate(6deg);
+    -moz-transform: rotate(6deg);
+    transform: rotate(6deg);
+}
+
+.transformacionEstilo7 {
+    -ms-transform: rotate(-1deg);
+    -webkit-transform: rotate(-1deg);
+    -moz-transform: rotate(-1deg);
+    transform: rotate(-1deg);
+}
+
+.transformacionEstilo8 {
+    -ms-transform: rotate(-2deg);
+    -webkit-transform: rotate(-2deg);
+    -moz-transform: rotate(-2deg);
+    transform: rotate(-2deg);
+}
+
+.transformacionEstilo9 {
+    -ms-transform: rotate(-3deg);
+    -webkit-transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+}
+
+.transformacionEstilo10 {
+    -ms-transform: rotate(-4deg);
+    -webkit-transform: rotate(-4deg);
+    -moz-transform: rotate(-4deg);
+    transform: rotate(-4deg);
+}
+
+.transformacionEstilo11 {
+    -ms-transform: rotate(-5deg);
+    -webkit-transform: rotate(-5deg);
+    -moz-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+}
+
+.transformacionEstilo12 {
+    -ms-transform: rotate(-6deg);
+    -webkit-transform: rotate(-6deg);
+    -moz-transform: rotate(-6deg);
+    transform: rotate(-6deg);
 }
 
 #contacto > div > div:nth-child(1) > div > div > p {
@@ -217,6 +376,10 @@ div#pie div p#copyright {
 }
 
 @media only screen and (max-width: 64em) { 
+   
+    #menu > div > ul > li {
+        margin: 0 8px;
+    }
     
     p#parrafoTituloSeccion {
         width: 100%;
@@ -238,6 +401,26 @@ div#pie div p#copyright {
 }
 
 @media only screen and (max-width: 40.063em) {
+    
+    .top-bar {
+        border-bottom: none;
+        outline: 2px solid white;
+        text-align: left;
+    }
+    
+    .top-bar-section {
+        display: inline;
+    }
+     
+    #menu > div > ul > li {
+        margin: 0;
+    }
+    
+    div.content-a div#logoOpenRoad {
+        background: url('../img/sprite-openroad.png') 0px -125px no-repeat;
+        width: 150px;
+        height: 100px;        
+    }
     
     div#nuestrosProyectos img {
         display: block;
