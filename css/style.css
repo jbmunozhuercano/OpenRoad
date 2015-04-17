@@ -203,6 +203,21 @@ div#nuestrosProyectos img {
     box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
+div.imagenWrap {
+    position: relative;
+}
+
+div.imagenWrap > div {
+    position: absolute;
+    background: transparent url("../img/sprite-openroad.png") -250px -125px no-repeat;
+    height: 50px;
+    width: 50px;
+    top: -20px;
+    left: 50%;
+    margin-left: -25px;
+    display: block;
+    z-index: 9999;
+}
 /* Ajuste para la altura de las columnas de serviciosWeb OJO!!!*/
 #servicios > div > div:nth-child(3),
 #servicios > div > div:nth-child(3) > div:nth-child(3) > div {
@@ -228,16 +243,21 @@ div#nuestrosProyectos h3 {
 }
 
 .tabs .tab-title > a {
-    font-weight: bold;
+    width: 50px;
+    height: 50px;
     background: transparent url("../img/sprite-openroad.png") -150px -125px no-repeat;
+    padding-left: 20px;
+    padding-right: 25px;
+    padding-top: 14px;
+    font-weight: bold;
 }
 
 .tabs .tab-title > a:hover {
-    background: transparent url("../img/sprite-openroad.png") -294px -125px no-repeat;
+    background: transparent url("../img/sprite-openroad.png") -250px -125px no-repeat;
 }
 
 .tabs .tab-title.active a {
-    background: transparent url('../img/sprite-openroad.png') -222px -125px no-repeat;
+    background: transparent url('../img/sprite-openroad.png') -200px -125px no-repeat;
 }
 
 div#nuestrosProyectos div.proyectosDescripcion {
@@ -247,6 +267,19 @@ div#nuestrosProyectos div.proyectosDescripcion {
     border: 2px solid #8b0f2f;
     border-radius: 5px;
     box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+div.proyectosDescripcion > div {
+    display: block;
+    background: transparent url("../img/sprite-openroad.png") -150px -125px no-repeat;
+    height: 50px;
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.proyectosDescripcion > div {
+    
 }
 
 /* Estilos para aplicar la transformación aleatoriamente con jQuery */
