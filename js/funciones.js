@@ -183,7 +183,7 @@ $(document).ready(function() {
     if(anchoPantalla <= 640) {
         ulProyectos.toggleClass(estiloTabs,estiloPorDefecto);
     } else {
-        if(ulProyectos.hasClass(estiloTabs)) { ulProyectos.toggleClass(estiloPorDefecto,estiloTabs);}  
+        if(ulProyectos.hasClass(estiloTabs)) { ulProyectos.toggleClass(estiloPorDefecto,estiloTabs); }
     }    
     
     for(var i = 0; i < 6; i++ ) {
