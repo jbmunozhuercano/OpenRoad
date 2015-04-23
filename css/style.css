@@ -323,14 +323,15 @@ div.imagenWrap > div {
 #contacto > div > div:nth-child(1) > div > div > h2 {
     color: #981235;
 }
+#proyectos > div:nth-child(1) > div > div > div > h2 {
+    color: #11749a;
+}
 
-#nuestrosProyectos h3 {
-    color: #08a677;
+#proyectos > div:nth-child(1) > div > div > div > p {
+    color: black;
 }
 
 div#proyectos {
-    /*background: #11749a url("../img/textura-corcho.jpg") repeat;
-    outline: 10px solid #585858;*/
     background-color: white;
 }
 
@@ -373,6 +374,10 @@ div.proyectosDescripcion > div {
     width: 50px;
     margin-left: auto;
     margin-right: auto;
+}
+
+#nuestrosProyectos h3 {
+    color: #08a677;
 }
 
 /* Estilos para aplicar la transformación aleatoriamente con jQuery */
