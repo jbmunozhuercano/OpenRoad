@@ -51,29 +51,37 @@
                      </div>
                 </div>
                 <div class="row">
-                    <div id="textoIzq" class="medium-8 large-7 large-offset-1 columns">
-                        <h1 class="medium-text-right">Construimos excepcionales experiencias<br> de usuario</h1>    
-                    </div>                    
-                    <div id="textoDer" class="medium-4 large-4 columns">
-                        <p id="parrafoSup">Web Diseño Video SEO</p>
-                        <p id="parrafoInf">En ruta desde <span>2005</span></p>
+                    <div class="small-11 small-centered medium-10 medium-centered large-12 columns">
+                        <div class="row">
+                            <div id="textoIzq" class="large-7 large-offset-1 columns">
+                                <h1 class="medium-text-left large-text-right">Construimos excepcionales experiencias de usuario</h1>    
+                            </div>                    
+                            <div id="textoDer" class="large-4 columns">
+                                <p id="parrafoSup">Web <br class="show-for-large-up">Diseño <br class="show-for-large-up">Video <br class="show-for-large-up">SEO</p>
+                                <p id="parrafoInf">En ruta <br class="show-for-large-up">desde <br class="show-for-large-up"><span>2005</span></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div id="scroll" class="row">
                     <div class="large-4 large-centered columns">
-                        <p class="text-center">Haz scroll hacia abajo
-                            <br> para saber más</p>
-                        <div>
-                        
+                        <div class="text-center">
+                            <ul>
+                                <li class="fa fa-chevron-down fa-1x"></li>
+                                <li class="fa fa-chevron-down fa-1x"></li>
+                                <li class="fa fa-chevron-down fa-1x"></li>
+                            </ul>
+                            <p>Haz scroll hacia abajo
+                                <br> para saber más</p>
+                            <ul id="iconosSociales">
+                                <li>
+                                    <a href="https://twitter.com/" target="_blank" id="twitter" class="fa fa-twitter-square fa-2x"></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.facebook.com/" target="_blank" id="facebook" class="fa fa-facebook-square fa-2x"></a>
+                                </li>
+                            </ul>
                         </div>
-                        <ul>
-                            <li>
-                                <a href="https://twitter.com/" target="_blank" id="twitter"></a>
-                            </li>
-                            <li>
-                                <a href="https://www.facebook.com/" target="_blank" id="facebook"></a>
-                            </li>
-                        </ul>
                     </div>
                 </div>
             </div>
@@ -267,12 +275,61 @@
                     </div>
                 </div>                
                 <div class="row">
+                    <div class="large-8 columns">                        
+                        <div id="googleMap">
+                        </div>
+                        <form>
+                            <div class="row">
+                                <div class="small-12 medium-6 columns">
+                                    <label><input type="text" id="nombre" placeholder="Nombre y apellidos (requerido)" required /></label>
+                                </div>
+                                <div class="small-12 medium-6 columns">
+                                    <label><input type="email" id="email" placeholder="Email (requerido)" required /></label>
+                                </div>
+                            </div>
+                            <label><input type="text" id="asunto" placeholder="Asunto"/></label>
+                            <label></textarea><textarea id="mensaje" cols="30" rows="10" placeholder="Mensaje (requerido)" required ></textarea></label>
+                            <input type="submit" value="Enviar" class="button expand radius" />
+                        </form>                        
+                    </div>
+                    <div id="datosContacto" class="large-4 columns">
+                        <div class="row" data-equalizer>
+                           <div class="small-12 medium-4 large-12 columns">
+                                <div class="panel callout radius" data-equalizer-watch>
+                                    <h3>Nuestra dirección</h3>
+                                    <p><i class="fa fa-map-marker fa-1x"></i> 
+                                    Calle Catral nº 12.<br>
+                                    03007, Alicante.<br>
+                                    Alicante.
+                                    </p>
+                                </div>
+                            </div>
+                           <div class="small-12 medium-4 large-12 columns">
+                                <div class="panel callout radius" data-equalizer-watch>
+                                    <h3>Email</h3>
+                                    <p><a href="mailto:contacto@email.com"><i class="fa fa-pencil-square fa-1x"></i> contacto@openroad.com</a></p>
+                                </div>
+                            </div>
+                           <div class="small-12 medium-4 large-12 columns">
+                                <div class="panel callout radius"  data-equalizer-watch>
+                                    <h3>Teléfono</h3>
+                                    <p class="hide-for-small-only"><i class="fa fa-phone-square fa-1x"></i> 555-563278</p>
+                                    <p class="show-for-small-only"><a href="tel:+34555563278"><i class="fa fa-phone-square fa-1x"></i> 555-563278</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    </div>
+                </div>
+                <!--<div class="row">
                     <div class="large-12 columns">
                         <div id="googleMap">
                         </div>
                     </div>
                 </div>
-                
+                                
                 <div class="row">
                     <form class="medium-8 large-8 columns">
                        <div class="row">
@@ -299,7 +356,7 @@
                         <div class="row">
                            <div class="small-11 small-centered large-11 large-centered columns panel callout radius">
                                  <h3>Nuestra dirección</h3>
-                                <p>
+                                <p><i class="fa fa-map-marker fa-1x"></i> 
                                 Calle Catral nº 12.<br>
                                 03007, Alicante.<br>
                                 Alicante.
@@ -307,17 +364,17 @@
                             </div>
                            <div class="small-11 small-centered large-11 large-centered columns panel callout radius">
                                  <h3>Email</h3>
-                                <p><a href="mailto:contacto@email.com">contacto@openroad.com</a></p>
+                                <p><a href="mailto:contacto@email.com"><i class="fa fa-pencil-square fa-1x"></i> contacto@openroad.com</a></p>
                             </div>
                            <div class="small-11 small-centered large-11 large-centered columns panel callout radius">
                                 <h3>Teléfono</h3>
-                                <p class="hide-for-small-only">555-563278</p>
-                                <p class="show-for-small-only"><a href="tel:+34555563278">555-563278</a></p>
+                                <p class="hide-for-small-only"><i class="fa fa-phone-square fa-1x"></i> 555-563278</p>
+                                <p class="show-for-small-only"><a href="tel:+34555563278"><i class="fa fa-phone-square fa-1x"></i> 555-563278</a></p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="anchoTotal">
+-->                <div class="anchoTotal">
                     <div id="pie" class="row">
                         <div class="large-12 columns">
                             <div class="text-center">

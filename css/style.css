@@ -30,7 +30,8 @@ a {
     text-decoration: none;
 }
 
-a:hover {
+a:hover,
+a:active {
     color: #08a677;
 }
 
@@ -82,6 +83,7 @@ body div#segundoFondo {
 body div#tercerFondo {
     background-image: url('../img/background-03.jpg');
 }
+
 /* Fin de los estilos de imagenes paralaje */
 div.content-a div#logoOpenRoad {
     background: url('../img/sprite-openroad.png') 0px 0px no-repeat;
@@ -141,6 +143,99 @@ div.content-a div#logoOpenRoad {
     color: #981235;        
 }
 /* Fin de los estilos del menú */
+
+#inicio > div > div:nth-child(3) > div > div {
+    margin-top: 50px;
+}
+
+div#textoIzq h1,
+p#parrafoSup,
+p#parrafoInf {
+    text-transform: uppercase;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.75);
+}
+
+div#textoIzq h1 {
+    color: #981235;
+    font-weight: bold;
+    margin-top: 0px;
+}
+
+p#parrafoSup {
+    font-family: 'Oswald', sans-serif;
+    font-size: 3em;
+    letter-spacing: 0.2em;
+    line-height: 1.25em;
+    color: #08a677;
+    margin-bottom: 5px;
+    padding-top: 10px;
+}
+
+p#parrafoInf {
+    font-size: 1.8em;
+    letter-spacing: 0.1em;
+    line-height: 1.2em;
+    font-weight: bold;
+}
+
+p#parrafoInf span {
+    font-size: 1.9em;
+    line-height: 1em;
+}
+
+#scroll > div > div > ul > li {
+        display: block;
+        height: 10px;
+}
+
+@-webkit-keyframes flechasAnimadas {
+    0%{color: #fff;}
+    25%{color: transparent;}
+    50%{color: #08a677;}
+    75%{color: transparent;}
+    100%{color: #fff;}
+}
+
+@-moz-keyframes flechasAnimadas {
+    0%{color: #fff;}
+    25%{color: transparent;}
+    50%{color: #08a677;}
+    75%{color: transparent;}
+    100%{color: #fff;}
+}
+
+@-ms-keyframes flechasAnimadas {
+    0%{color: #fff;}
+    25%{color: transparent;}
+    50%{color: #08a677;}
+    75%{color: transparent;}
+    100%{color: #fff;}
+}
+
+@keyframes flechasAnimadas {
+    0%{color: #fff;}
+    25%{color: transparent;}
+    50%{color: #08a677;}
+    75%{color: transparent;}
+    100%{color: #fff;}
+}
+
+#scroll > div > div > ul:nth-child(1) > li {
+    -webkit-animation: flechasAnimadas 8s infinite;
+    -moz-animation: flechasAnimadas 8s infinite;
+    -ms-animation: flechasAnimadas 8s infinite;
+    animation: flechasAnimadas 8s infinite;
+}        
+        
+#scroll > div > div > ul,
+#scroll > div ul#iconosSociales {
+    margin-left: 0px;
+}
+
+#scroll > div ul#iconosSociales > li {
+    display: inline;
+    margin: 10px;
+}
 
 div.relleno {
     width: 33.33333%;
@@ -234,14 +329,15 @@ div.imagenWrap > div {
 }
 
 div#proyectos {
-    background: #11749a url("../img/textura-corcho.jpg") repeat;
-    outline: 10px solid #585858;
+    /*background: #11749a url("../img/textura-corcho.jpg") repeat;
+    outline: 10px solid #585858;*/
+    background-color: white;
 }
 
 div#nuestrosProyectos h3 {
     text-align: center;
 }
-
+/* Estilos pestañas galería de proyectos */
 .tabs .tab-title > a {
     width: 50px;
     height: 50px;
@@ -259,6 +355,7 @@ div#nuestrosProyectos h3 {
 .tabs .tab-title.active a {
     background: transparent url('../img/sprite-openroad.png') -200px -125px no-repeat;
 }
+/* Fin de los estilos de las pestañas de proyectos */
 
 div#nuestrosProyectos div.proyectosDescripcion {
     margin-top: 20px;
@@ -276,10 +373,6 @@ div.proyectosDescripcion > div {
     width: 50px;
     margin-left: auto;
     margin-right: auto;
-}
-
-div.proyectosDescripcion > div {
-    
 }
 
 /* Estilos para aplicar la transformación aleatoriamente con jQuery */
@@ -373,8 +466,7 @@ div.proyectosDescripcion > div {
     -moz-transform: rotate(-6deg);
     transform: rotate(-6deg);
 }
-
-#contacto > div > div:nth-child(1) > div > div > p {
+#contacto > div:nth-child(1) > div:nth-child(1) > div > div > p {
     color: black;
 }
 
@@ -382,16 +474,31 @@ div#contacto div#googleMap {
     width: 100%;
     height: 300px;
     display: block;
-    margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 20px;
     box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+#contacto > div > div:nth-child(3) {
+    margin-top: 20px;
 }
 
 input.button {
     background-color: #11749a;
     border-color: #008CBA;
     text-transform: uppercase;
+}
+
+input.button:active,
+input.button:hover {
+    background-color: #08a677;
+    border-color: #048962;
+}
+
+div#datosContacto div.panel.callout.radius {
+    border-color: #08a677;
+    background-color: rgba(8, 166, 119, 0.15);
 }
 
 div#datosContacto h3 {
@@ -404,7 +511,7 @@ div#datosContacto p {
 
 div.anchoTotal {
     width: 100%;
-    background-color: #11749a;
+    background-color: #981235;
     margin: 0;
     padding: 0;
 }
@@ -427,9 +534,31 @@ div#pie div p#copyright {
 
 64em --> 1024px
 40.063em --> 641.008px
+26.25em --> 420px
 
 */
 
+
+@media only screen and (min-width: 48.0625em) and (max-width: 64em) {
+    
+    div#textoIzq h1 {
+        font-size: 335%;
+    }
+    
+    p#parrafoSup {
+        font-size: 260%;
+        margin-bottom: 20px;
+    }
+    
+    p#parrafoInf {
+       font-size: 180%;
+    }
+
+    p#parrafoInf span {
+       font-size: 150%;
+    }
+    
+}
 
 @media only screen and (max-width: 64em) { 
    
@@ -452,6 +581,10 @@ div#pie div p#copyright {
     div.serviciosWeb:nth-child(3) > div > div {
         border-radius: 20px;
         box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    }
+    
+    #inicio > div > div:nth-child(3) > div > div {
+        margin-top: 20px;    
     }
 
 }
@@ -477,11 +610,49 @@ div#pie div p#copyright {
         width: 150px;
         height: 100px;        
     }
-        
+    
+    div#textoIzq h1 {
+        font-size: 340%;
+        letter-spacing: normal;
+    }
+    
+    p#parrafoSup {
+        font-size: 250%;
+        margin-bottom: 20px;
+        padding-top: 0px;
+    }
+
+    p#parrafoInf {
+       font-size: 200%;
+    }
+
+    p#parrafoInf span {
+       font-size: 160%;
+    }
+    
     div#nuestrosProyectos img {
         display: block;
         margin-left: auto;
         margin-right: auto;
     }
     
+}
+
+@media only screen and (max-width: 26.25em) {
+    
+    div#textoIzq h1 {
+        font-size: 250%;
+    }
+    
+    p#parrafoSup {
+        font-size: 200%;
+    }
+    
+    p#parrafoInf {
+       font-size: 160%;
+    }
+
+    p#parrafoInf span {
+       font-size: 130%;
+    }
 }
