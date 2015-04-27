@@ -291,7 +291,7 @@ div#rellenoDer {
 }
 
 div#proyectos {
-    background-color: #11749a;
+    background: #fff url("../img/textura-corcho.jpg") repeat;
 }
 
 div#nuestrosProyectos img {
@@ -329,10 +329,6 @@ div.imagenWrap > div {
 
 #proyectos > div:nth-child(1) > div > div > div > p {
     color: black;
-}
-
-div#proyectos {
-    background-color: white;
 }
 
 div#nuestrosProyectos h3 {
