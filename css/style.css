@@ -527,13 +527,18 @@ div#datosContacto p {
 
 div.anchoTotal {
     width: 100%;
-    background-color: #981235;
     margin: 0;
     padding: 0;
+    color: black;
 }
 
 div#pie > div > div > p > a {
     margin-top: 20px;
+    color: #981235;    
+}
+
+div#pie > div > div > p > a:hover {
+    color: #08a677;
 }
 
 div#pie > div > div > p {
