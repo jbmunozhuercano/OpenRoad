@@ -238,12 +238,14 @@ p#parrafoInf span {
 }
 
 div.relleno {
+    position: relative;
     width: 33.33333%;
-    height: 360px;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 div#rellenoIzq {
     background-color: #981235;
+    height: 360px;
 }
 
 div.tituloSeccion {
@@ -267,6 +269,10 @@ p#parrafoTituloSeccion a:hover {
     color: #08a677;
 }
 
+div#servicios {
+    height: 1080px;
+}
+
 div.serviciosWeb i {
     margin: 20px;
 }
@@ -274,20 +280,29 @@ div.serviciosWeb i {
 div.serviciosWeb:nth-child(1) > div > div {
     background-color: #981235;
     border-radius: 0 0 0 20px;
+    position: absolute;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 div.serviciosWeb:nth-child(2) > div > div {
     background-color: #11749a;
-    
+    position: absolute;
+    margin-left: 333px; 
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);    
 }
 
 div.serviciosWeb:nth-child(3) > div > div {
     background-color: #08a677;
     border-radius: 0 20px 0 0;
+    position: absolute;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 div#rellenoDer {
     background-color: #08a677;
+    height: 328px;
+    top: 59px;
+    float: right;
 }
 
 div#proyectos {
@@ -587,6 +602,23 @@ div#pie div p#copyright {
     #inicio > div > div:nth-child(3) > div > div {
         margin-top: 20px;    
     }
+    
+    
+    div.relleno,
+    div.serviciosWeb:nth-child(1) > div > div, 
+    div.serviciosWeb:nth-child(2) > div > div, 
+    div.serviciosWeb:nth-child(3) > div > div {
+        position: static;
+    }
+    
+    div.serviciosWeb:nth-child(2) > div > div {
+        margin-left: auto;
+    }
+    
+    div#rellenoDer {
+        float: none;
+    }
+    
 
 }
 
@@ -656,4 +688,5 @@ div#pie div p#copyright {
     p#parrafoInf span {
        font-size: 130%;
     }
+        
 }
