@@ -69,15 +69,24 @@ p.nbsp {
 }
 /* Fin de los estilos generales */
 /* Imágenes paralaje */
+body div#primerFondo,
+body div#segundoFondo,
+body div#tercerFondo {
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+body div#segundoFondo,
+body div#tercerFondo {
+    position: relative;
+    z-index: 9999;    
+}
 
 body div#primerFondo {
-    background-image: url('../img/background-01.jpg');
-    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    background-image: url('../img/background-01.jpg');    
 }
 
 body div#segundoFondo {
     background-image: url('../img/background-02.jpg');
-    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 body div#tercerFondo {
