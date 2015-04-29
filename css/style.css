@@ -254,7 +254,7 @@ div.relleno {
 
 div#rellenoIzq {
     background-color: #981235;
-    height: 360px;
+    height: 303px;
 }
 
 div.tituloSeccion {
@@ -286,6 +286,10 @@ div.serviciosWeb i {
     margin: 20px;
 }
 
+div.serviciosWeb h3 {
+    color: white;
+}
+
 div.serviciosWeb:nth-child(1) > div > div {
     background-color: #981235;
     border-radius: 0 0 0 20px;
@@ -300,6 +304,14 @@ div.serviciosWeb:nth-child(2) > div > div {
     box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);    
 }
 
+div.serviciosWeb:nth-child(2) > div > div a {
+    color: #08a677;
+}
+
+div.serviciosWeb:nth-child(2) > div > div a:hover {
+    color: #981235;
+}
+
 div.serviciosWeb:nth-child(3) > div > div {
     background-color: #08a677;
     border-radius: 0 20px 0 0;
@@ -309,8 +321,8 @@ div.serviciosWeb:nth-child(3) > div > div {
 
 div#rellenoDer {
     background-color: #08a677;
-    height: 328px;
-    top: 59px;
+    height: 303px;
+    top: 140px;
     float: right;
 }
 
