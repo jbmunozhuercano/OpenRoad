@@ -100,112 +100,6 @@ if (!$("html").hasClass("touch")) {
     $(window).scroll(parallaxPosition);
     parallaxPosition();
 }
-/* Funciones galería de imagen */
-$('#proyectos > div > div:nth-child(5)').click(function () {
-    $('#imagenProyecto').css({background: 'url("./img/sprite-openroad.jpg") -490px 0px no-repeat'});
-});
-
-
-/* Funcion para el menú de móvil */
-
-$("div#menuMovil ul").click(function () {
-
-    if ($("div#menuMovil ul ul").css('display') == 'none') {
-        $("div#menuMovil ul ul ").fadeIn('slow');
-    } else {
-        $("div#menuMovil ul ul ").fadeOut('slow');
-    }
-
-
-});
-
-$("#nuestrosProyectos > div:gt(0)").hide();
-
-$('.galeriaProyectos').click(function() {
-        
-    var id = $(this).attr('id');   
-    
-    switch(id) {
-        case 'proyecto01': $('#nuestrosProyectos > div:nth-child(1)').fadeIn(1000);
-                           $("#nuestrosProyectos > div:gt(0)").hide();
-                           break;
-        case 'proyecto02': $('#nuestrosProyectos > div:nth-child(2)').fadeIn(1000);
-                            $("#nuestrosProyectos > div:gt(1)").hide();
-                           break;
-        case 'proyecto03': $('#nuestrosProyectos > div:nth-child(3)').fadeIn(1000);
-                            $("#nuestrosProyectos > div:gt(2)").hide();               
-                            break;
-        case 'proyecto04': $('#nuestrosProyectos > div:nth-child(4)').fadeIn(1000);
-                            $("#nuestrosProyectos > div:gt(3)").hide();
-                           break;
-        case 'proyecto05': $('#nuestrosProyectos > div:nth-child(5)').fadeIn(1000);
-                            $("#nuestrosProyectos > div:gt(4)").hide();
-                           break;
-        case 'proyecto06': $('#nuestrosProyectos > div:nth-child(6)').fadeIn(1000);
-                            $("#nuestrosProyectos > div:gt(5)").hide();
-                           break;
-    }
-    
-});
-
-
-/*
-$("#nuestrosProyectos > div:gt(0)").hide();
-
-$('#proyectos > div > div:nth-child(3) > div:nth-child(1)').click(function() {
-    $("#nuestrosProyectos > div:gt(0)").fadeOut('slow');
-    $('#nuestrosProyectos > div:nth-child(1)').fadeIn('slow');
-});
-
-
-$('#proyectos > div > div:nth-child(3) > div:nth-child(2)').click(function() {
-    $("#nuestrosProyectos > div:gt(0)").fadeOut('slow');
-    $('#nuestrosProyectos > div:nth-child(2)').fadeIn('slow');
-});
-*/
-
-/* Funciones para el slideshow */
-/*
-$("#nuestrosProyectos > div:gt(0)").hide();
-
-setInterval(function () {
-    $('#nuestrosProyectos > div:first')
-        .next()
-        .end()
-        .appendTo('#nuestrosProyectos');
-}, 10000);*/
-
-function validacionFormulario() {
-
-    var validacion = true;
-    var campoRequerido = document.getElementsByClassName("campoRequerido");
-    var nombre = document.getElementById("nombre").value;
-    var email = document.getElementById("email").value;
-    var asunto = document.getElementById("asunto").value;
-    var mensaje = document.getElementById("mensaje").value;
-
-    if (nombre == null || nombre.length == 0 || /^\s+$/.test(nombre)) {
-        validacion = false;
-        campoRequerido[0].style.color = "red";
-    } else campoRequerido[0].style.color = "white";
-
-    if (!(/\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)/.test(email))) {
-        validacion = false;
-        campoRequerido[1].style.color = "red";
-    } else campoRequerido[1].style.color = "white";
-
-    if (asunto == null || asunto.length == 0 || /^\s+$/.test(asunto)) {
-        validacion = false;
-        campoRequerido[2].style.color = "red";
-    } else campoRequerido[2].style.color = "white";
-
-    if (mensaje == null || mensaje.length == 0 || /^\s+$/.test(mensaje)) {
-        validacion = false;
-        campoRequerido[3].style.color = "red";
-    } else campoRequerido[3].style.color = "white";
-
-    return validacion;
-}
 
 /* Funciones de Google Maps API */
 function inicializarMapa() {
@@ -236,3 +130,72 @@ function inicializarMapa() {
  }
 
 google.maps.event.addDomListener(window, 'load', inicializarMapa);
+
+/* Funciones ajueste modo pestañas en vista para móvil */
+var min = -6;
+var max = 6;
+
+function numeroAleatorio(min,max) {
+    return x = Math.floor(Math.random() * (max - min) + min);
+}
+
+function generarEstilo() {
+    var claseGeneral = "transformacionEstilo";
+    var num = numeroAleatorio(min,max);
+    
+    switch(num) {
+        case 0: return claseGeneral + 0;
+            break;
+        case 1: return claseGeneral + 1;
+            break;
+        case 2: return claseGeneral + 2;
+            break;
+        case 3: return claseGeneral + 3;
+            break;
+        case 4: return claseGeneral + 4;
+            break;
+        case 5: return claseGeneral + 5;
+            break;
+        case 6: return claseGeneral + 6;
+            break;
+        case -1: return claseGeneral + 7;
+            break;
+        case -2: return claseGeneral + 8;
+            break;
+        case -3: return claseGeneral + 9;
+            break;
+        case -4: return claseGeneral + 10;
+            break;
+        case -5: return claseGeneral + 11;
+            break;
+        case -6: return claseGeneral + 12;
+            break;
+    }
+}
+
+$(document).ready(function() {
+    
+    var ulProyectos = $("#nuestrosProyectos > div > ul");
+    var estiloPorDefecto = "medium-block-grid-2 large-block-grid-3";
+    var estiloTabs = "tabs-content";
+    var anchoPantalla = $(window).width();    
+        
+    if(anchoPantalla <= 640) {
+        ulProyectos.toggleClass(estiloTabs,estiloPorDefecto);
+    } else {
+        if(ulProyectos.hasClass(estiloTabs)) { ulProyectos.toggleClass(estiloPorDefecto,estiloTabs); }
+    }    
+    
+    for(var i = 0; i < 6; i++ ) {
+    
+        var descripcionProyecto = "#panel" + i + " > div";
+        var imagenProyecto = "#panel" + i + " img.th.radius";
+        
+        $(descripcionProyecto).addClass(generarEstilo());
+        $(imagenProyecto).addClass(generarEstilo());
+        
+    }
+
+});
+
+

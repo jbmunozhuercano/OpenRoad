@@ -1,104 +1,161 @@
 <!DOCTYPE html>
-<html lang="es-ES">
+<html lang="es-ES" class="no-js">
 
 <head>
     <meta charset="UTF-8">
     <title>Diseño Web - Open Road</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./css/reset.min.css">
-    <link rel="stylesheet" href="./css/paralaje.css">
-    <link rel="stylesheet" href="./css/estilos.css">
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/foundation.min.css" type="text/css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/vendor/modernizr.js" type="text/javascript"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=false"></script>
 </head>
 
 <body>
     <div class="fullscreen background parallax" id="primerFondo" data-img-width="1920" data-img-height="1080" data-diff="400">
         <div class="content-a" id="inicio">
             <div>
-                <a href="#inicio">
-                    <div id="logoOpenRoad">
-
+               <div class="row">                
+                    <div class="large-6 large-centered columns">
+                        <a href="#inicio">
+                            <div id="logoOpenRoad">
+                                        
+                            </div>
+                        </a>
                     </div>
-                </a>
-                <div id="menuMovil">
-                    <ul>
-                        <li>Menu
+                </div>
+               <div class="row">
+                    <div class="large-12 columns">
+                        <div id="menu" class="top-bar" data-topbar role="navigation">
+                            <ul class="title-area">
+                                <li class="name"></li>
+                                <li class="toggle-topbar menu-icon"><div class="large-12">
+                                    <a href="#"><span>Menu</span></a>
+                                </div></li>
+                            </ul>
+                           <div class="top-bar-section">
+                                 <ul class="left">
+                                    <li class="active"><a href="#inicio">Inicio</a>
+                                    </li>
+                                    <li><a href="#servicios">Servicios</a>
+                                    </li>
+                                    <li><a href="#proyectos">Proyectos</a>
+                                    </li>
+                                    <li><a href="#contacto">Contacto</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                     </div>
+                </div>
+                <div class="row">
+                    <div class="small-11 small-centered medium-10 medium-centered large-12 columns">
+                        <div class="row">
+                            <div id="textoIzq" class="large-7 large-offset-1 columns">
+                                <h1 class="medium-text-left large-text-right">Construimos excepcionales experiencias de usuario</h1>    
+                            </div>                    
+                            <div id="textoDer" class="large-4 columns">
+                                <p id="parrafoSup">Web <br class="show-for-large-up">Diseño <br class="show-for-large-up">Video <br class="show-for-large-up">SEO</p>
+                                <p id="parrafoInf">En ruta <br class="show-for-large-up">desde <br class="show-for-large-up"><span>2005</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="scroll" class="row">
+                    <div class="large-4 large-centered columns">
+                        <div class="text-center">
                             <ul>
-                                <li><a href="#inicio" id="activa">Inicio</a>
+                                <li class="fa fa-chevron-down fa-1x"></li>
+                                <li class="fa fa-chevron-down fa-1x"></li>
+                                <li class="fa fa-chevron-down fa-1x"></li>
+                            </ul>
+                            <p>Haz scroll hacia abajo
+                                <br> para saber más</p>
+                            <ul id="iconosSociales">
+                                <li>
+                                    <a href="https://twitter.com/" target="_blank" id="twitter" class="fa fa-twitter-square fa-2x"></a>
                                 </li>
-                                <li><a href="#servicios">Servicios</a>
-                                </li>
-                                <li><a href="#proyectos">Proyectos</a>
-                                </li>
-                                <li><a href="#contacto">Contacto</a>
+                                <li>
+                                    <a href="https://www.facebook.com/" target="_blank" id="facebook" class="fa fa-facebook-square fa-2x"></a>
                                 </li>
                             </ul>
-                        </li>
-                    </ul>
-                </div>
-                <div id="menu">
-                    <ul>
-                        <li><a href="#inicio" id="activa">Inicio</a>
-                        </li>
-                        <li><a href="#servicios">Servicios</a>
-                        </li>
-                        <li><a href="#proyectos">Proyectos</a>
-                        </li>
-                        <li><a href="#contacto">Contacto</a>
-                        </li>
-                    </ul>
-                </div>
-                <div id="textoIzq">
-                    <h1>Construimos excepcionales experiencias<br> de usuario</h1>
-                </div>
-                <div id="textoDer">
-                    <p id="parrafoSup">Web Diseño Video SEO</p>
-                    <p id="parrafoInf">En ruta desde <span>2005</span>
-                    </p>
-                </div>
-                <div id="scroll">
-                    <p>Haz scroll hacia abajo
-                        <br> para saber más</p>
-                    <div>
-
+                        </div>
                     </div>
-                    <ul>
-                        <li>
-                            <a href="https://twitter.com/" target="_blank" id="twitter"></a>
-                        </li>
-                        <li>
-                            <a href="https://www.facebook.com/" target="_blank" id="facebook"></a>
-                        </li>
-                    </ul>
                 </div>
             </div>
-        </div>
-        <!-- content-a #inicio -->
-    </div>
-    <!-- fullscreen background parallax -->
+        </div><!-- content-a #inicio -->
+    </div><!-- fullscreen background parallax -->
     <section class="fullscreen">
         <div class="content-a" id="servicios">
             <div>
                 <div></div>
-                <div class="tituloSeccion">
-                    <h2>Servicios</h2>
-                    <p>A continuación te mostramos lo que podemos hacer,
-                        <br> pero no dudes en <a href="#contacto">preguntarnos</a> si no encuentras lo que necesitas.</p>
+                <div class="row">
+                    <div id="rellenoIzq" class="relleno show-for-large-up large-4 columns"></div>
+                    <div class="tituloSeccion large-4 columns">
+                        <div class="text-center">
+                            <h2>Servicios</h2>
+                            <p id="parrafoTituloSeccion">A continuación te mostramos lo que podemos hacer,
+                            <br> pero no dudes en <a href="#contacto">preguntarnos</a> si no encuentras lo que necesitas.</p>
+                        </div>
+                    </div>
+                    <div class="large-4 columns"></div>
                 </div>
-                <div class="serviciosWeb">
-                    <div id="webBasico"></div>
-                    <h3>Diseño web básico</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi ab sint corporis, totam cumque nam impedit consequuntur fuga ipsam, ad, nisi. Veniam blanditiis hic vitae, omnis repellendus quia, odio asperiores.</p>
+                <div class="row">
+                    <div class="serviciosWeb large-4 columns">
+                        <div class="row" itemscope itemtype="https://schema.org/ProfessionalService">
+                           <div class="small-11 small-centered medium-6 medium-centered large-12 columns">
+                                 <div class="text-center">
+                                    <i class="fa fa-code fa-5x"></i>
+                                    <h3 itemprop="name">Diseño web básico</h3>
+                                </div>
+                                <p itemprop="description">El diseño y puesta en marcha de tu página web es gratuito. Después nos ajustamos a tu presupuesto y requerimientos para el hosting y posicionamiento.</p>
+                                 <ul class="pricing-table">
+                                    <li class="title">Desde</li>
+                                    <li class="price" itemprop="priceRange">0€</li>
+                                </ul>
+                                <p class="nbsp">&nbsp;</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="serviciosWeb large-4 columns">
+                        <div class="row" itemscope itemtype="https://schema.org/ProfessionalService">
+                            <div class="small-11 small-centered medium-6 medium-centered large-12 columns">
+                                <div class="text-center">
+                                    <i class="fa fa-wordpress fa-5x"></i>
+                                    <h3 itemprop="name">Diseño WordPress</h3>
+                                </div>
+                                <p itemprop="description">Te configuramos una plataforma <a href="https://es.wordpress.org/" target="_blank">WordPress</a> para que puedas tener tu web corporativa, porfolio y/o un blog donde puedes ofrecer tus servicios y productos.</p>
+                                <ul class="pricing-table">
+                                    <li class="title">Desde</li>
+                                    <li class="price" itemprop="priceRange">500€</li>
+                                </ul>
+                                <p class="nbsp">&nbsp;</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="serviciosWeb large-4 columns">
+                        <div class="row" itemscope itemtype="https://schema.org/ProfessionalService">
+                            <div class="small-11 small-centered medium-6 medium-centered large-12 columns">
+                                <div class="text-center">
+                                    <i class="fa fa-shopping-cart fa-5x"></i>
+                                    <h3 itemprop="name">Diseño tienda online</h3>
+                                </div>
+                                <p itemprop="description">Creamos una plataforma eCommerce con la que podrás llegar a todo el mundo, que se ajusta a tus necesidades y las de tus productos.</p>
+                                <ul class="pricing-table">
+                                    <li class="title">Desde</li>
+                                    <li class="price" itemprop="priceRange">1000€</li>
+                                </ul>
+                                <p class="nbsp">&nbsp;</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="serviciosWeb">
-                    <div id="wordPress"></div>
-                    <h3>Diseño WordPress</h3>
-                    <p>Ut gravida lacus eu gravida semper. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse nisi nulla, venenatis sit amet mi ac, porta volutpat est.</p>
-                </div>
-                <div class="serviciosWeb">
-                    <div id="tiendaOnline"></div>
-                    <h3>Diseño tienda online</h3>
-                    <p>Etiam scelerisque neque justo, eget vulputate tellus semper congue. Donec et dui nec ligula lacinia auctor sed sit amet ligula. Maecenas tincidunt lectus non metus consequat, sit amet malesuada enim iaculis.</p>
+                <div class="row">
+                    <div id="rellenoDer" class="relleno show-for-large-up large-4 large-offset-8">
+                        
+                    </div>
                 </div>
                 <div></div>
             </div>
@@ -118,63 +175,96 @@
     <section>
         <div class="content-a" id="proyectos">
             <div>
-                <div class="tituloSeccion">
-                    <h2>Historias de éxito</h2>
-                    <p>Hacemos un trabajo magnífico,
-                        <br> comprueba alguno de nuestros proyectos.</p>
-                </div>
-                <div id="nuestrosProyectos">
-                    <div>
-                        <div></div>
-                        <div>
-                            <h3>Lorem ipsum dolor sit amet</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus augue ante, imperdiet quis elit a, blandit auctor sapien. Nunc gravida pretium pellentesque. Vestibulum non massa tellus. Sed ultricies nulla ac diam pharetra dignissim. Sed at lorem et neque laoreet laoreet. Cras non porta purus, eu lacinia nunc. Sed fringilla nisl libero, quis accumsan ex viverra ut. Praesent lectus dolor, tempus vel ante id, egestas sodales dolor. Nullam sed varius libero. Vivamus consequat risus nec tellus congue, ac rutrum orci venenatis. Proin vel ultrices lectus. Integer eget finibus diam.</p>
-                        </div>
-                    </div>
-                    <div>
-                        <div></div>
-                        <div>
-                            <h3>Cras mi magna, dignissim non fringilla rutrum</h3>
-                            <p>Cras mi magna, dignissim non fringilla rutrum, viverra nec erat. Mauris ut justo leo. Donec vulputate tortor in scelerisque feugiat. Quisque mollis lacus in lorem sodales, quis consequat ipsum lacinia. Duis vehicula rhoncus venenatis. Proin venenatis felis sed odio consectetur, ut aliquet magna rhoncus. Integer consequat placerat venenatis. Fusce non est id odio viverra mattis. Aenean at viverra tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dolor erat, fringilla a justo sed, sodales venenatis turpis. Aenean rutrum non velit a finibus. In purus lorem, lobortis et mauris nec, interdum tempor enim.</p>
-                        </div>
-                    </div>
-                    <div>
-                        <div></div>
-                       <div>
-                             <h3>Fusce tempor, elit a convallis pretium</h3>
-                            <p>Fusce tempor, elit a convallis pretium, ante felis tristique ex, iaculis tincidunt lectus mi non purus. Phasellus laoreet est a placerat posuere. Praesent lectus risus, accumsan eu condimentum vitae, molestie in elit. Maecenas iaculis quis dui a blandit. Curabitur at viverra purus, in ullamcorper odio. Cras ac cursus metus, quis condimentum tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et varius lectus.</p>
-                        </div>
-                    </div>
-                    <div>
-                        <div></div>
-                       <div>
-                             <h3>Morbi feugiat metus at auctor tincidunt</h3>
-                            <p>Morbi feugiat metus at auctor tincidunt. Nulla magna urna, dapibus ut ipsum eget, lobortis ornare sem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed rutrum nibh finibus leo hendrerit, id varius diam pretium. Praesent eget dictum purus. Fusce iaculis placerat sapien, vitae suscipit augue dignissim et. Nunc tristique malesuada massa vel commodo. Etiam ut facilisis justo. Sed et felis aliquet, gravida lorem et, euismod quam. Phasellus vitae facilisis enim. Aliquam cursus pretium diam, eu pharetra nibh tincidunt vitae. Praesent hendrerit nibh id sapien rutrum eleifend. Praesent malesuada lacus id turpis molestie auctor. Nam volutpat augue eleifend, vehicula metus vitae, viverra purus.</p>
-                                                </div>
-                        </div>
-                    <div>
-                        <div></div>
-                       <div>
-                             <h3>Fusce sit amet massa id augue commodo</h3>
-                            <p>Fusce sit amet massa id augue commodo sagittis at in neque. Pellentesque eleifend tincidunt ullamcorper. Curabitur quam ligula, dictum at pretium sit amet, feugiat vel quam. Praesent lobortis finibus commodo. Donec consectetur ante a neque lobortis, sed accumsan mauris convallis. Nulla et elit sit amet risus luctus euismod nec sed felis. Donec tellus lectus, pharetra vel urna ac, laoreet fringilla enim. Quisque sed diam quam. Phasellus elementum diam lectus, non dapibus nulla pellentesque ut. Mauris rutrum sem ipsum, eu congue odio interdum a. Curabitur at interdum sem. Donec blandit, nulla vitae tincidunt bibendum, nisi quam mollis eros, vel scelerisque enim turpis vel libero. Fusce vitae massa ante. Maecenas in neque non sem rhoncus mollis sed ac nibh.</p>
-                        </div>
-                    </div>
-                    <div>
-                        <div></div>
-                       <div>
-                             <h3>Aliquam dignissim luctus dictum</h3>
-                            <p>Aliquam dignissim luctus dictum. Nunc ac ipsum eleifend, faucibus odio ut, interdum lacus. Nullam semper mauris ut tellus imperdiet, porttitor interdum odio vulputate. Suspendisse et nunc eu ipsum lacinia iaculis in a orci. Vivamus ex ligula, rutrum quis venenatis sit amet, posuere in massa. Curabitur urna elit, feugiat tempus neque sed, porta hendrerit arcu. Donec risus justo, auctor in aliquet luctus, egestas et dui. Nam convallis nibh sem, non rutrum elit pharetra vitae.</p>
+                <div class="row">
+                    <div class="tituloSeccion large-4 large-centered columns">
+                       <div class="text-center">
+                             <h2>Historias de éxito</h2>
+                            <p>Hacemos un trabajo magnífico,
+                                <br> comprueba alguno de nuestros proyectos.</p>
                         </div>
                     </div>
                 </div>
-               <div>
-                    <div id="proyecto01" class="galeriaProyectos"></div>
-                    <div id="proyecto02" class="galeriaProyectos"></div>
-                    <div id="proyecto03" class="galeriaProyectos"></div>
-                    <div id="proyecto04" class="galeriaProyectos"></div>
-                    <div id="proyecto05" class="galeriaProyectos"></div>
-                    <div id="proyecto06" class="galeriaProyectos"></div>
-               </div>         
+                <ul class="row tabs show-for-small-only" data-tab role="tablist">
+                    <li class="tab-title active"><a href="#panel0">1</a></li>
+                    <li class="tab-title"><a href="#panel1">2</a></li>
+                    <li class="tab-title"><a href="#panel2">3</a></li>
+                    <li class="tab-title"><a href="#panel3">4</a></li>
+                    <li class="tab-title"><a href="#panel4">5</a></li>
+                    <li class="tab-title"><a href="#panel5">6</a></li>
+                </ul>
+                </div>
+                <div id="nuestrosProyectos" class="row">
+                <div class="large-12 columns">
+                     <ul class="medium-block-grid-2 large-block-grid-3">
+                            <li class="content active" id="panel0">
+                            <div class="imagenWrap">
+                               <div></div>
+                                <img src="img/openroad_tranvia.jpg" alt="Imagen para la web del tranvia de Alicante realizada por OpenRoad" class="th radius">
+                            </div>
+                                <div class="proyectosDescripcion">
+                                <div></div>
+                               <h3>Cras mi magna, dignissim non fringilla rutrum</h3>
+                               <p>Cras mi magna, dignissim non fringilla rutrum, viverra nec erat. Mauris ut justo leo. Donec vulputate tortor in scelerisque feugiat. Quisque mollis lacus in lorem sodales, quis consequat ipsum lacinia. Duis vehicula rhoncus venenatis. Proin venenatis felis sed odio consectetur, ut aliquet magna rhoncus. Integer consequat placerat venenatis. Fusce non est id odio viverra mattis. Aenean at viverra tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dolor erat, fringilla a justo sed, sodales venenatis turpis. Aenean rutrum non velit a finibus. In purus lorem, lobortis et mauris nec, interdum tempor enim.</p>
+                                </div>   
+                            </li>
+                            <li class="content" id="panel1">
+                            <div class="imagenWrap">
+                                <div></div>
+                                    <img src="img/openroad_globo.jpg" alt="Imagen para la web de Aventuras en Globo realizada por OpenRoad" class="th radius">                                
+                            </div>
+                           <div class="proyectosDescripcion">
+                                <div></div>
+                                 <h3>Fusce tempor, elit a convallis pretium</h3>
+                                <p>Fusce tempor, elit a convallis pretium, ante felis tristique ex, iaculis tincidunt lectus mi non purus. Phasellus laoreet est a placerat posuere. Praesent lectus risus, accumsan eu condimentum vitae, molestie in elit. Maecenas iaculis quis dui a blandit. Curabitur at viverra purus, in ullamcorper odio. Cras ac cursus metus, quis condimentum tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et varius lectus.</p>
+                            </div>
+                            </li>
+                            <li class="content" id="panel2">
+                           <div class="imagenWrap">
+                                <div></div>
+                                 <img src="img/openroad_ciudadartes.jpg" alt="Imagen para la web de la Ciudad de las Artes y las Ciencias realizada por OpenRoad.com" class="th radius">
+                            </div>
+                           <div class="proyectosDescripcion">
+                                <div></div>
+                                 <h3>Morbi feugiat metus at auctor tincidunt</h3>
+                                <p>Morbi feugiat metus at auctor tincidunt. Nulla magna urna, dapibus ut ipsum eget, lobortis ornare sem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed rutrum nibh finibus leo hendrerit, id varius diam pretium. Praesent eget dictum purus. Fusce iaculis placerat sapien, vitae suscipit augue dignissim et. Nunc tristique malesuada massa vel commodo. Etiam ut facilisis justo. Sed et felis aliquet, gravida lorem et, euismod quam. Phasellus vitae facilisis enim. Aliquam cursus pretium diam, eu pharetra nibh tincidunt vitae. Praesent hendrerit nibh id sapien rutrum eleifend. Praesent malesuada lacus id turpis molestie auctor. Nam volutpat augue eleifend, vehicula metus vitae, viverra purus.</p>
+                            </div>
+                            </li>
+                            <li class="content" id="panel3">
+                            <div class="imagenWrap">
+                               <div></div>
+                                <img src="img/openroad_biblioteca.jpg" alt="Foto para la web de la biblioteca publica de Alicante realizada por OpenRoad" class="th radius">
+                            </div>
+                            <div class="proyectosDescripcion">
+                              <div></div>
+                               <h3>Fusce sit amet massa id augue commodo</h3>
+                                <p>Fusce sit amet massa id augue commodo sagittis at in neque. Pellentesque eleifend tincidunt ullamcorper. Curabitur quam ligula, dictum at pretium sit amet, feugiat vel quam. Praesent lobortis finibus commodo. Donec consectetur ante a neque lobortis, sed accumsan mauris convallis. Nulla et elit sit amet risus luctus euismod nec sed felis. Donec tellus lectus, pharetra vel urna ac, laoreet fringilla enim. Quisque sed diam quam. Phasellus elementum diam lectus, non dapibus nulla pellentesque ut. Mauris rutrum sem ipsum, eu congue odio interdum a. Curabitur at interdum sem. Donec blandit, nulla vitae tincidunt bibendum, nisi quam mollis eros, vel scelerisque enim turpis vel libero. Fusce vitae massa ante. Maecenas in neque non sem rhoncus mollis sed ac nibh.</p> </div>               
+                            </li>
+                            <li class="content" id="panel4">
+                            <div class="imagenWrap">
+                               <div></div>
+                               <img src="img/openroad_cafeteria.jpg" alt="Imagen para la cafeteria El Reposo realizada por OpenRoad" class="th radius">
+                            </div>
+                           
+                                <div class="proyectosDescripcion">
+                                <div></div>
+                                <h3>Aliquam dignissim luctus dictum</h3>
+                                <p>Aliquam dignissim luctus dictum. Nunc ac ipsum eleifend, faucibus odio ut, interdum lacus. Nullam semper mauris ut tellus imperdiet, porttitor interdum odio vulputate. Suspendisse et nunc eu ipsum lacinia iaculis in a orci. Vivamus ex ligula, rutrum quis venenatis sit amet, posuere in massa. Curabitur urna elit, feugiat tempus neque sed, porta hendrerit arcu. Donec risus justo, auctor in aliquet luctus, egestas et dui. Nam convallis nibh sem, non rutrum elit pharetra vitae.</p>
+                                 </div>
+                            
+                            </li>
+                            <li class="content" id="panel5">
+                            <div class="imagenWrap">
+                               <div></div>
+                                <img src="img/openroad_fotografa.jpg" alt="Imagen para la web de la fotografa Maria Perez realizada por OpenRoad" class="th radius">  </div>                          
+                           <div class="proyectosDescripcion">
+                                <div></div>
+                                 <h3>Lorem ipsum dolor sit amet</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus augue ante, imperdiet quis elit a, blandit auctor sapien. Nunc gravida pretium pellentesque. Vestibulum non massa tellus. Sed ultricies nulla ac diam pharetra dignissim. Sed at lorem et neque laoreet laoreet. Cras non porta purus, eu lacinia nunc. Sed fringilla nisl libero, quis accumsan ex viverra ut. Praesent lectus dolor, tempus vel ante id, egestas sodales dolor. Nullam sed varius libero. Vivamus consequat risus nec tellus congue, ac rutrum orci venenatis. Proin vel ultrices lectus. Integer eget finibus diam.</p>
+                            </div>
+                            </li>  
+                        </ul>
+                 </div>
+                </div>
             </div>
         </div>
         <!-- content-a #proyectos -->
@@ -191,34 +281,73 @@
     <section class="fullscreen">
         <div class="content-a" id="contacto">
             <div>
-                <div class="tituloSeccion">
-                    <h2>Háblanos</h2>
-                    <p>Somos abiertos y sociales.</p>
+                <div class="row">
+                    <div class="tituloSeccion large-4 large-centered columns">
+                       <div class="text-center">
+                             <h2>Háblanos</h2>
+                            <p>Somos abiertos y sociales.</p>
+                        </div>
+                    </div>
+                </div>                
+                <div class="row">
+                    <div class="large-8 columns">                        
+                        <div id="googleMap">
+                        </div>
+                        <form>
+                            <div class="row">
+                                <div class="small-12 medium-6 columns">
+                                    <label><input type="text" id="nombre" placeholder="Nombre y apellidos (requerido)" required /></label>
+                                </div>
+                                <div class="small-12 medium-6 columns">
+                                    <label><input type="email" id="email" placeholder="Email (requerido)" required /></label>
+                                </div>
+                            </div>
+                            <label><input type="text" id="asunto" placeholder="Asunto"/></label>
+                            <label></textarea><textarea id="mensaje" cols="30" rows="10" placeholder="Mensaje (requerido)" required ></textarea></label>
+                            <input type="submit" value="Enviar" class="button expand radius" />
+                        </form>                        
+                    </div>
+                    <div id="datosContacto" class="large-4 columns" itemscope itemtype="https://schema.org/LocalBusiness">
+                        <div class="row" data-equalizer>
+                           <div class="small-12 medium-4 large-12 columns">
+                                <div class="panel callout radius" data-equalizer-watch>
+                                    <h3>Nuestra dirección</h3>
+                                    <p itemprop="address"><i class="fa fa-map-marker fa-1x"></i> 
+                                    <span itemprop="streetAddress">Calle Catral nº 12</span>.<br>
+                                    <span itemprop="postalCode">03007</span>, <span itemprop="addressLocality">Alicante</span>.<br>
+                                    <span itemprop="addressRegion">Alicante</span>.
+                                    </p>
+                                </div>
+                            </div>
+                           <div class="small-12 medium-4 large-12 columns">
+                                <div class="panel callout radius" data-equalizer-watch>
+                                    <h3>Email</h3>
+                                    <p><a href="mailto:contacto@email.com"><i class="fa fa-pencil-square fa-1x"></i> <span itemprop="email">contacto@openroad.com</span></a></p>
+                                </div>
+                            </div>
+                           <div class="small-12 medium-4 large-12 columns">
+                                <div class="panel callout radius"  data-equalizer-watch>
+                                    <h3>Teléfono</h3>
+                                    <p class="hide-for-small-only"><i class="fa fa-phone-square fa-1x"></i> 555-563278</p>
+                                    <p class="show-for-small-only"><a href="tel:+34555563278"><i class="fa fa-phone-square fa-1x"></i> <span itemprop="telephone">555-563278</span></a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    </div>
                 </div>
-                <div id="googleMap">
-                </div>
-                <form>
-                    <label><input type="text" id="nombre" placeholder="Nombre y apellidos" /></label>
-                    <label><input type="email" id="email" placeholder="Email"/></label>
-                    <label><input type="text" id="asunto" placeholder="Asunto"/></label>
-                    <label><textarea id="mensaje" placeholder="Mensaje"></textarea></label>
-                    <input type="submit" value="Enviar" />
-                </form>
-                <div id="datosContacto">
-                    <h3>Nuestra dirección</h3>
-                    <p>
-                    Calle Catral nº 12.<br>
-                    03007, Alicante.<br>
-                    Alicante.
-                    </p>
-                    <h3>Email</h3>
-                    <p><a href="mailto:contacto@email.com">contacto@email.com</a></p>
-                    <h3>Teléfono</h3>
-                    <p><a href="tel:+34555563278">555-563278</a></p>
-                </div>
-                <div id="pie">
-                    <p><a href="#inicio">Volver arriba</a></p>
-                    <p>Copyright OpenRoad S.L. 2015. Todos los derechos reservados.</p>
+                <div class="anchoTotal">
+                    <div id="pie" class="row">
+                        <div class="large-12 columns">
+                            <div class="text-center">
+                                <p><a href="#inicio" class="fa fa-arrow-circle-o-up fa-3x"></a></p>
+                                <p>Volver arriba</p>
+                                <p id="copyright">OpenRoad&copy; S.L. 2015. Todos los derechos reservados.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -227,8 +356,12 @@
     </section>
     <!-- fullscreen -->
     <!-- Incluimos jQuery -->
-    <script src="./js/jquery-1.11.1.min.js"></script>
-    <script src="./js/funciones.js" type="text/javascript"></script>
+    <script src="js/vendor/jquery.js" type="text/javascript"></script>
+    <script src="js/funciones.js" type="text/javascript"></script>
+    <script src="js/foundation.min.js" type="text/javascript"></script>
+    <script>
+        $(document).foundation();
+    </script>
 </body>
 
 </html>
