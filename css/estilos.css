@@ -585,6 +585,7 @@ div#datosContacto div.panel.callout.radius {
 }
 
 div#datosContacto h3 {
+    font-size: 130%;
     color: #981235;
 }
 
@@ -592,11 +593,8 @@ div#datosContacto p {
     color: black;
 }
 
-div.anchoTotal {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    color: black;
+div#datosContacto p#telefono {
+    margin-bottom: 0;
 }
 
 div#pie > div > div > p > a {
