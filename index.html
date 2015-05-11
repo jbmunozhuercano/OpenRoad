@@ -12,57 +12,48 @@
     <script src="js/vendor/modernizr.js" type="text/javascript"></script>
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
 </head>
-
 <body>
     <div class="fullscreen background parallax" id="primerFondo" data-img-width="1920" data-img-height="1080" data-diff="400">
         <div class="content-a" id="inicio">
             <div>
                <div class="row">                
                     <div class="large-6 large-centered columns">
-                        <a href="#inicio">
-                            <div id="logoOpenRoad">
-                                        
-                            </div>
-                        </a>
-                    </div>
-                </div>
-               <div class="row">
+                        <a href="#inicio"><div id="logoOpenRoad"></div></a>
+                    </div><!-- columns -->
+                </div><!-- row -->
+                <div class="row">
                     <div class="large-12 columns">
-                        <div id="menu" class="top-bar" data-topbar role="navigation">
+                        <nav class="top-bar" data-topbar role="navigation">
                             <ul class="title-area">
                                 <li class="name"></li>
-                                <li class="toggle-topbar menu-icon"><div class="large-12">
-                                    <a href="#"><span>Menu</span></a>
-                                </div></li>
-                            </ul>
-                           <div class="top-bar-section">
+                                <li class="toggle-topbar menu-icon">
+                                    <div class="large-12 columns"><a href="#"><span>Menu</span></a></div>
+                                </li><!-- toggle-topbar -->
+                            </ul><!-- title-area -->
+                            <div class="top-bar-section">
                                  <ul class="left">
-                                    <li class="active"><a href="#inicio">Inicio</a>
-                                    </li>
-                                    <li><a href="#servicios">Servicios</a>
-                                    </li>
-                                    <li><a href="#proyectos">Proyectos</a>
-                                    </li>
-                                    <li><a href="#contacto">Contacto</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                     </div>
-                </div>
+                                    <li class="active"><a href="#inicio">Inicio</a></li>
+                                    <li><a href="#servicios">Servicios</a></li>
+                                    <li><a href="#proyectos">Proyectos</a></li>
+                                    <li><a href="#contacto">Contacto</a></li>
+                                </ul><!-- left -->
+                            </div><!-- top-bar-section -->
+                        </nav><!-- menu --> 
+                    </div><!-- columns -->
+                </div><!-- row -->
                 <div class="row">
                     <div class="small-11 small-centered medium-10 medium-centered large-12 columns">
                         <div class="row">
                             <div id="textoIzq" class="large-7 large-offset-1 columns">
                                 <h1 class="medium-text-left large-text-right">Construimos excepcionales experiencias de usuario</h1>    
-                            </div>                    
+                            </div><!-- columns -->                    
                             <div id="textoDer" class="large-4 columns">
                                 <p id="parrafoSup">Web <br class="show-for-large-up">Diseño <br class="show-for-large-up">Video <br class="show-for-large-up">SEO</p>
                                 <p id="parrafoInf">En ruta <br class="show-for-large-up">desde <br class="show-for-large-up"><span>2005</span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                            </div><!-- columns -->
+                        </div><!-- row -->
+                    </div><!-- columns -->
+                </div><!-- row -->
                 <div id="scroll" class="row">
                     <div class="large-4 large-centered columns">
                         <div class="text-center">
@@ -71,20 +62,15 @@
                                 <li class="fa fa-chevron-down fa-1x"></li>
                                 <li class="fa fa-chevron-down fa-1x"></li>
                             </ul>
-                            <p>Haz scroll hacia abajo
-                                <br> para saber más</p>
+                            <p>Haz scroll hacia abajo <br> para saber más</p>
                             <ul id="iconosSociales">
-                                <li>
-                                    <a href="https://twitter.com/" target="_blank" id="twitter" class="fa fa-twitter-square fa-2x"></a>
-                                </li>
-                                <li>
-                                    <a href="https://www.facebook.com/" target="_blank" id="facebook" class="fa fa-facebook-square fa-2x"></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                                <li><a href="https://twitter.com/" target="_blank" id="twitter" class="fa fa-twitter-square fa-2x"></a></li>
+                                <li><a href="https://www.facebook.com/" target="_blank" id="facebook" class="fa fa-facebook-square fa-2x"></a></li>
+                            </ul><!-- iconosSociales -->
+                        </div><!-- text-center -->
+                    </div><!-- columns -->
+                </div><!-- row -->
+            </div><!-- OJO! no borrar - paralaje -->
         </div><!-- content-a #inicio -->
     </div><!-- fullscreen background parallax -->
     <section class="fullscreen">
@@ -156,7 +142,7 @@
                     <div id="rellenoDer" class="relleno show-for-large-up large-4 large-offset-8"></div>
                 </div><!-- row -->
                 <div></div><!-- relleno para la cinta -->
-            </div>
+            </div><!-- OJO! no borrar - paralaje -->                
         </div><!-- content-a #servicios -->
     </section><!-- fullscreen -->
     <div class="not-fullscreen background parallax" id="segundoFondo" data-img-width="1920" data-img-height="1080" data-diff="400"></div>
@@ -332,5 +318,4 @@
         $(document).foundation();
     </script>
 </body>
-
 </html>
