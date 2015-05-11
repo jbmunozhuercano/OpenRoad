@@ -609,6 +609,7 @@ div#pie > div > div > p > a:hover {
 }
 
 div#pie > div > div > p {
+    color: black;
     margin: 0px;
 }
 
