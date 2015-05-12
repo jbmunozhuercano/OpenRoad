@@ -1,0 +1,765 @@
+/* Hoja de estilos CSS */
+
+/*
+-Colores:
+Azul: 11749a
+Rojo: 981235
+Verde: 08a677
+
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Oswald|Roboto);
+/* Estilos generales */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 100%;
+}
+
+body,input,textarea {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover,
+a:active {
+    color: #08a677;
+}
+
+p {
+    font-size: 1em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Oswald', sans-serif;
+}
+
+h1 {
+    font-size: 4.236em;
+    letter-spacing: 0.1em;
+}
+
+h2 {
+    font-size: 2.618em;
+    letter-spacing: 0.15em;
+}
+
+h3 {
+    font-size: 1.618em;
+    letter-spacing: 0.3em;
+}
+
+p.nbsp {
+    height: 0px;
+    width: 0px;
+}
+/* Fin de los estilos generales */
+/* Estilos paralaje */
+/* background setup */
+.background {
+    background-repeat:no-repeat;
+    /* custom background-position */
+    background-position:50% 50%;
+    /* ie8- graceful degradation */
+    background-position:50% 50%\9 !important;
+}
+
+/* fullscreen setup */
+html, body {
+    /* give this to all tags from html to .fullscreen */
+    height:100%;
+}
+
+.fullscreen,
+.content-a {
+    width:100%;
+    min-height:100%;
+}
+
+.not-fullscreen,
+.not-fullscreen .content-a,
+.fullscreen.not-overflow,
+.fullscreen.not-overflow .content-a {
+    height:100%;
+    overflow:hidden;
+}
+
+/* content centering styles */
+.content-a {
+    display:table;
+}
+
+.content-b {
+    display:table-cell;
+    position:relative;
+    vertical-align:middle;
+    text-align:center;
+}
+
+.not-fullscreen {
+    height:50%;
+}    
+/* Fin de los estilos del paralaje */
+/* Imágenes paralaje */
+body div#primerFondo,
+body div#segundoFondo,
+body div#tercerFondo {
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+body div#segundoFondo,
+body div#tercerFondo {
+    position: relative;
+    z-index: 9999;    
+}
+
+body div#primerFondo {
+    background-image: url('../img/background-01.jpg');    
+}
+
+body div#segundoFondo {
+    background-image: url('../img/background-02.jpg');
+}
+
+body div#tercerFondo {
+    background-image: url('../img/background-03.jpg');
+}
+
+/* Fin de los estilos de imagenes paralaje */
+div.content-a div#logoOpenRoad {
+    background: url('../img/sprite-openroad.png') 0px 0px no-repeat;
+    width: 400px;
+    height: 124px;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Inicio de los estilos del menú */
+.top-bar {
+    border-bottom: 2px solid white;
+    text-align: center;
+}
+
+.top-bar,
+.top-bar.expanded .title-area,
+.top-bar-section ul li,
+.top-bar-section li:not(.has-form) a:not(.button) {
+    background: none;
+}
+
+#menu > div > ul > li {
+    margin: 0 50px;
+}
+
+.top-bar-section {
+    display: inline-block;
+}
+
+.top-bar-section li:not(.has-form) a:not(.button) {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.3em;
+}
+
+.top-bar-section li.active:not(.has-form) a:not(.button) {
+    color: #981235;
+    background: none;
+}
+
+.top-bar-section li.active:not(.has-form) a:not(.button):hover {
+    color: #11749a;
+    background: none;
+}
+
+.top-bar-section ul li:hover:not(.has-form) > a,
+.top-bar-section li:not(.has-form) a:not(.button):hover {
+    color: #08a677;
+    background: none;
+    background-color: none;
+}
+
+#menu > div > ul > li.active {
+    color: #981235;        
+}
+/* Fin de los estilos del menú */
+
+#inicio > div > div:nth-child(3) > div > div {
+    margin-top: 50px;
+}
+
+div#textoIzq h1,
+p#parrafoSup,
+p#parrafoInf {
+    text-transform: uppercase;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.75);
+}
+
+div#textoIzq h1 {
+    color: #981235;
+    font-weight: bold;
+    margin-top: 0px;
+}
+
+p#parrafoSup {
+    font-family: 'Oswald', sans-serif;
+    font-size: 3em;
+    letter-spacing: 0.2em;
+    line-height: 1.25em;
+    color: #08a677;
+    margin-bottom: 5px;
+    padding-top: 10px;
+}
+
+p#parrafoInf {
+    font-size: 1.8em;
+    letter-spacing: 0.1em;
+    line-height: 1.2em;
+    font-weight: bold;
+}
+
+p#parrafoInf span {
+    font-size: 1.9em;
+    line-height: 1em;
+}
+
+#scroll > div > div > ul > li {
+        display: block;
+        height: 10px;
+}
+
+@-webkit-keyframes flechasAnimadas {
+    0%{color: #fff;}
+    25%{color: transparent;}
+    50%{color: #08a677;}
+    75%{color: transparent;}
+    100%{color: #fff;}
+}
+
+@-moz-keyframes flechasAnimadas {
+    0%{color: #fff;}
+    25%{color: transparent;}
+    50%{color: #08a677;}
+    75%{color: transparent;}
+    100%{color: #fff;}
+}
+
+@-ms-keyframes flechasAnimadas {
+    0%{color: #fff;}
+    25%{color: transparent;}
+    50%{color: #08a677;}
+    75%{color: transparent;}
+    100%{color: #fff;}
+}
+
+@keyframes flechasAnimadas {
+    0%{color: #fff;}
+    25%{color: transparent;}
+    50%{color: #08a677;}
+    75%{color: transparent;}
+    100%{color: #fff;}
+}
+
+#scroll > div > div > ul:nth-child(1) > li {
+    -webkit-animation: flechasAnimadas 8s infinite;
+    -moz-animation: flechasAnimadas 8s infinite;
+    -ms-animation: flechasAnimadas 8s infinite;
+    animation: flechasAnimadas 8s infinite;
+}        
+        
+#scroll > div > div > ul,
+#scroll > div ul#iconosSociales {
+    margin-left: 0px;
+}
+
+#scroll > div ul#iconosSociales > li {
+    display: inline;
+    margin: 10px;
+}
+
+div.relleno {
+    position: relative;
+    width: 33.33333%;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+div#rellenoIzq {
+    background-color: #981235;
+    height: 303px;
+}
+
+div.tituloSeccion {
+    margin: 40px 0;
+}
+
+p#parrafoTituloSeccion {
+    width: 200%;
+    position: absolute;
+    left: -170px;
+    color: black;
+}
+
+div#datosContacto p a,
+p#parrafoTituloSeccion a {
+    color: #11749a;
+}
+
+div#datosContacto p a:hover,
+p#parrafoTituloSeccion a:hover {
+    color: #08a677;
+}
+
+div#servicios {
+    height: 1080px;
+}
+
+div.serviciosWeb i {
+    margin: 20px;
+}
+
+div.serviciosWeb h3 {
+    color: white;
+}
+
+div.serviciosWeb:nth-child(1) > div > div {
+    background-color: #981235;
+    border-radius: 0 0 0 20px;
+    position: absolute;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+div.serviciosWeb:nth-child(2) > div > div {
+    background-color: #11749a;
+    position: absolute;
+    margin-left: 333px; 
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);    
+}
+
+div.serviciosWeb:nth-child(2) > div > div a {
+    color: #08a677;
+}
+
+div.serviciosWeb:nth-child(2) > div > div a:hover {
+    color: #981235;
+}
+
+div.serviciosWeb:nth-child(3) > div > div {
+    background-color: #08a677;
+    border-radius: 0 20px 0 0;
+    position: absolute;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+div#rellenoDer {
+    background-color: #08a677;
+    height: 303px;
+    top: 140px;
+    float: right;
+}
+
+div#proyectos {
+    background: #fff url("../img/textura-corcho.jpg") repeat;
+}
+
+div#nuestrosProyectos img {
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+div.imagenWrap {
+    position: relative;
+}
+
+div.imagenWrap > div {
+    position: absolute;
+    background: transparent url("../img/sprite-openroad.png") -250px -125px no-repeat;
+    height: 50px;
+    width: 50px;
+    top: -20px;
+    left: 50%;
+    margin-left: -25px;
+    display: block;
+    z-index: 9999;
+}
+/* Ajuste para la altura de las columnas de serviciosWeb OJO!!!*/
+#servicios > div > div:nth-child(3),
+#servicios > div > div:nth-child(3) > div:nth-child(3) > div {
+    height: 333px;
+}
+
+#servicios > div > div:nth-child(2) > div > div > h2,
+#contacto > div > div:nth-child(1) > div > div > h2 {
+    color: #981235;
+}
+#proyectos > div:nth-child(1) > div > div > div > h2 {
+    color: #11749a;
+}
+
+#proyectos > div:nth-child(1) > div > div > div > p {
+    color: black;
+}
+
+div#nuestrosProyectos h3 {
+    text-align: center;
+}
+/* Estilos pestañas galería de proyectos */
+.tabs .tab-title > a {
+    width: 50px;
+    height: 50px;
+    background: transparent url("../img/sprite-openroad.png") -150px -125px no-repeat;
+    padding-left: 20px;
+    padding-right: 25px;
+    padding-top: 14px;
+    font-weight: bold;
+}
+
+.tabs .tab-title > a:hover {
+    background: transparent url("../img/sprite-openroad.png") -250px -125px no-repeat;
+}
+
+.tabs .tab-title.active a {
+    background: transparent url('../img/sprite-openroad.png') -200px -125px no-repeat;
+}
+/* Fin de los estilos de las pestañas de proyectos */
+
+div#nuestrosProyectos div.proyectosDescripcion {
+    margin-top: 20px;
+    padding: 10px;
+    background: #981235 url("../img/textura-carton.jpg") repeat;
+    border: 2px solid #8b0f2f;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+div.proyectosDescripcion > div {
+    display: block;
+    background: transparent url("../img/sprite-openroad.png") -150px -125px no-repeat;
+    height: 50px;
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#nuestrosProyectos h3 {
+    color: #08a677;
+}
+
+/* Estilos para aplicar la transformación aleatoriamente con jQuery */
+.transformacionEstilo0 {
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+.transformacionEstilo1 {
+    -ms-transform: rotate(1deg);
+    -webkit-transform: rotate(1deg);
+    -moz-transform: rotate(1deg);
+    transform: rotate(1deg);
+}
+
+.transformacionEstilo2 {
+    -ms-transform: rotate(2deg);
+    -webkit-transform: rotate(2deg);
+    -moz-transform: rotate(2deg);
+    transform: rotate(2deg);
+}
+
+.transformacionEstilo3 {
+    -ms-transform: rotate(3deg);
+    -webkit-transform: rotate(3deg);
+    -moz-transform: rotate(3deg);
+    transform: rotate(3deg);
+}
+
+.transformacionEstilo4 {
+    -ms-transform: rotate(4deg);
+    -webkit-transform: rotate(4deg);
+    -moz-transform: rotate(4deg);
+    transform: rotate(4deg);
+}
+
+.transformacionEstilo5 {
+    -ms-transform: rotate(5deg);
+    -webkit-transform: rotate(5deg);
+    -moz-transform: rotate(5deg);
+    transform: rotate(5deg);
+}
+
+.transformacionEstilo6 {
+    -ms-transform: rotate(6deg);
+    -webkit-transform: rotate(6deg);
+    -moz-transform: rotate(6deg);
+    transform: rotate(6deg);
+}
+
+.transformacionEstilo7 {
+    -ms-transform: rotate(-1deg);
+    -webkit-transform: rotate(-1deg);
+    -moz-transform: rotate(-1deg);
+    transform: rotate(-1deg);
+}
+
+.transformacionEstilo8 {
+    -ms-transform: rotate(-2deg);
+    -webkit-transform: rotate(-2deg);
+    -moz-transform: rotate(-2deg);
+    transform: rotate(-2deg);
+}
+
+.transformacionEstilo9 {
+    -ms-transform: rotate(-3deg);
+    -webkit-transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+}
+
+.transformacionEstilo10 {
+    -ms-transform: rotate(-4deg);
+    -webkit-transform: rotate(-4deg);
+    -moz-transform: rotate(-4deg);
+    transform: rotate(-4deg);
+}
+
+.transformacionEstilo11 {
+    -ms-transform: rotate(-5deg);
+    -webkit-transform: rotate(-5deg);
+    -moz-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+}
+
+.transformacionEstilo12 {
+    -ms-transform: rotate(-6deg);
+    -webkit-transform: rotate(-6deg);
+    -moz-transform: rotate(-6deg);
+    transform: rotate(-6deg);
+}
+#contacto > div:nth-child(1) > div:nth-child(1) > div > div > p {
+    color: black;
+}
+
+div#contacto div#googleMap {
+    width: 100%;
+    height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+#contacto > div > div:nth-child(3) {
+    margin-top: 20px;
+}
+
+input.button {
+    background-color: #11749a;
+    border-color: #008CBA;
+    text-transform: uppercase;
+}
+
+input.button:active,
+input.button:hover {
+    background-color: #08a677;
+    border-color: #048962;
+}
+
+div#datosContacto div.panel.callout.radius {
+    border-color: #08a677;
+    background-color: rgba(8, 166, 119, 0.15);
+}
+
+div#datosContacto h3 {
+    color: #981235;
+}
+
+div#datosContacto p {
+    color: black;
+}
+
+div.anchoTotal {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+div#pie > div > div > p > a {
+    margin-top: 20px;
+    color: #981235;    
+}
+
+div#pie > div > div > p > a:hover {
+    color: #08a677;
+}
+
+div#pie > div > div > p {
+    color: black;
+    margin: 0px;
+}
+
+div#pie div p#copyright {
+    margin-top: 20px;
+}
+/* Inicio de las media queries */
+
+/* 
+-Puntos de ruptura:
+
+64em --> 1024px
+40.063em --> 641.008px
+26.25em --> 420px
+
+*/
+
+
+@media only screen and (min-width: 48.0625em) and (max-width: 64em) {
+    
+    div#textoIzq h1 {
+        font-size: 335%;
+    }
+    
+    p#parrafoSup {
+        font-size: 260%;
+        margin-bottom: 20px;
+    }
+    
+    p#parrafoInf {
+       font-size: 180%;
+    }
+
+    p#parrafoInf span {
+       font-size: 150%;
+    }
+    
+}
+
+@media only screen and (max-width: 64em) { 
+   
+    #menu > div > ul > li {
+        margin: 0 8px;
+    }
+    
+    p#parrafoTituloSeccion {
+        width: 100%;
+        position: static;
+    }
+    
+    #servicios > div > div:nth-child(3),
+    #servicios > div > div:nth-child(3) > div:nth-child(3) > div {
+        height: auto;
+    }
+    
+    div.serviciosWeb:nth-child(1) > div > div,
+    div.serviciosWeb:nth-child(2) > div > div,
+    div.serviciosWeb:nth-child(3) > div > div {
+        border-radius: 20px;
+        box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    }
+    
+    #inicio > div > div:nth-child(3) > div > div {
+        margin-top: 20px;    
+    }
+    
+    
+    div.relleno,
+    div.serviciosWeb:nth-child(1) > div > div, 
+    div.serviciosWeb:nth-child(2) > div > div, 
+    div.serviciosWeb:nth-child(3) > div > div {
+        position: static;
+    }
+    
+    div.serviciosWeb:nth-child(2) > div > div {
+        margin-left: auto;
+    }
+    
+    div#rellenoDer {
+        float: none;
+    }
+    
+
+}
+
+@media only screen and (max-width: 40.063em) {
+    
+    .top-bar {
+        border: 2px solid white;
+        border-radius: 10px;
+        text-align: left;
+    }
+    
+    .top-bar-section {
+        display: inline;
+    }
+     
+    #menu > div > ul > li {
+        margin: 0;
+    }
+    
+    div.content-a div#logoOpenRoad {
+        background: url('../img/sprite-openroad.png') 0px -125px no-repeat;
+        width: 150px;
+        height: 100px;        
+    }
+    
+    div#textoIzq h1 {
+        font-size: 340%;
+        letter-spacing: normal;
+    }
+    
+    p#parrafoSup {
+        font-size: 250%;
+        margin-bottom: 20px;
+        padding-top: 0px;
+    }
+
+    p#parrafoInf {
+       font-size: 200%;
+    }
+
+    p#parrafoInf span {
+       font-size: 160%;
+    }
+    
+    div#nuestrosProyectos img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+}
+
+@media only screen and (max-width: 26.25em) {
+    
+    div#textoIzq h1 {
+        font-size: 250%;
+    }
+    
+    p#parrafoSup {
+        font-size: 200%;
+    }
+    
+    p#parrafoInf {
+       font-size: 160%;
+    }
+
+    p#parrafoInf span {
+       font-size: 130%;
+    }
+        
+}
