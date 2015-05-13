@@ -132,8 +132,8 @@ function inicializarMapa() {
 google.maps.event.addDomListener(window, 'load', inicializarMapa);
 
 /* Funciones ajueste modo pestañas en vista para móvil */
-var min = -6;
-var max = 6;
+var min = -4;
+var max = 4;
 
 function numeroAleatorio(min,max) {
     return x = Math.floor(Math.random() * (max - min) + min);
@@ -154,21 +154,13 @@ function generarEstilo() {
             break;
         case 4: return claseGeneral + 4;
             break;
-        case 5: return claseGeneral + 5;
+        case -1: return claseGeneral + 5;
             break;
-        case 6: return claseGeneral + 6;
+        case -2: return claseGeneral + 6;
             break;
-        case -1: return claseGeneral + 7;
+        case -3: return claseGeneral + 7;
             break;
-        case -2: return claseGeneral + 8;
-            break;
-        case -3: return claseGeneral + 9;
-            break;
-        case -4: return claseGeneral + 10;
-            break;
-        case -5: return claseGeneral + 11;
-            break;
-        case -6: return claseGeneral + 12;
+        case -4: return claseGeneral + 8;
             break;
     }
 }
