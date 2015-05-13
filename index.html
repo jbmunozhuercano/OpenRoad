@@ -260,17 +260,17 @@
                 </div><!-- row -->
                 <div class="row">
                     <div class="large-8 columns">
-                        <form>
+                        <form id="formContacto">
                             <div class="row">
                                 <div class="small-12 medium-6 columns">
-                                    <label><input type="text" id="nombre" placeholder="Nombre y apellidos (requerido)" required /></label>
+                                    <label><input type="text" name="nombre" placeholder="Nombre y apellidos (requerido)" pattern="^[A-Za-záéíóúñ]{2,}([\s][A-Za-záéíóúñ]{2,})+$" required /></label>
                                 </div><!-- columns -->
                                 <div class="small-12 medium-6 columns">
-                                    <label><input type="email" id="email" placeholder="Email (requerido)" required /></label>
+                                    <label><input type="email" name="email" placeholder="Email (requerido)" required /></label>
                                 </div><!-- columns -->
                             </div><!-- row -->
-                            <label><input type="text" id="asunto" placeholder="Asunto"/></label>
-                            <label></textarea><textarea id="mensaje" cols="30" rows="10" placeholder="Mensaje (requerido)" required ></textarea></label>
+                            <label><input type="text" name="asunto" placeholder="Asunto"/></label>
+                            <label></textarea><textarea name="mensaje" cols="30" rows="10" placeholder="Mensaje (requerido)" required ></textarea></label>
                             <input type="submit" value="Enviar" class="button expand radius" />
                         </form>                       
                     </div><!-- columns -->

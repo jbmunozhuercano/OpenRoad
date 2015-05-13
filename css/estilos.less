@@ -596,7 +596,6 @@ div#contacto {
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 20px;
-        /*.sombraCaja;*/
     }
 
     & > div > div:nth-child(3) {
@@ -627,6 +626,12 @@ form {
 
     }
     
+    .error {
+        background-color: lighten(@segundoColor,20%);
+        color: white;
+        padding-left: 5px;
+    }
+    
 }
 
 div#datosContacto {
@@ -637,7 +642,7 @@ div#datosContacto {
     }
 
     h3 {
-        font-size: 130%;
+        font-size: 135%;
         color: @segundoColor;
     }
 
@@ -677,9 +682,10 @@ div#pie {
 /*
 Puntos de ruptura:
 
-26.25em -->  320px
-40em    -->  640px
-60em    --> 1024px
+26.25em     -->     320px
+40em        -->     640px
+60em        -->    1024px
+120.063em   -->    1920.008px
 
 */
 

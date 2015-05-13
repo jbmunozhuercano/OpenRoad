@@ -496,7 +496,6 @@ div#contacto div#googleMap {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
-  /*.sombraCaja;*/
 }
 div#contacto > div > div:nth-child(3) {
   margin-top: 20px;
@@ -516,12 +515,17 @@ form input.button:hover {
   background-color: #08a677;
   border-color: #034531;
 }
+form .error {
+  background-color: #e62a5b;
+  color: white;
+  padding-left: 5px;
+}
 div#datosContacto div.panel.callout.radius {
   border-color: #11749a;
   background-color: transparent;
 }
 div#datosContacto h3 {
-  font-size: 130%;
+  font-size: 135%;
   color: #981235;
 }
 div#datosContacto p {
@@ -549,9 +553,10 @@ div#pie div p#copyright {
 /*
 Puntos de ruptura:
 
-26.25em -->  320px
-40em    -->  640px
-60em    --> 1024px
+26.25em     -->     320px
+40em        -->     640px
+60em        -->    1024px
+120.063em   -->    1920.008px
 
 */
 @media only screen and (max-width: 26.25em) {
