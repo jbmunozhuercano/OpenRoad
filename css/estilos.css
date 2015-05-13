@@ -308,6 +308,18 @@ div#datosContacto p a:hover,
 p#parrafoTituloSeccion a:hover {
   color: #08a677;
 }
+#servicios > div > div:nth-child(2) > div > div > h2,
+#contacto > div > div:nth-child(1) > div > div > h2 {
+  color: #981235;
+}
+#servicios {
+  height: 1080px;
+}
+#servicios > div > div:nth-child(3),
+#servicios > div > div:nth-child(3) > div:nth-child(3) > div {
+  height: 333px;
+  /* Ajuste para la altura de las columnas de serviciosWeb OJO!!!*/
+}
 div.serviciosWeb i {
   margin: 20px;
 }
@@ -337,18 +349,6 @@ div.serviciosWeb:nth-child(3) > div > div {
   border-radius: 0 20px 0 0;
   position: absolute;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.75);
-}
-div#servicios > div > div:nth-child(2) > div > div > h2,
-div#contacto > div > div:nth-child(1) > div > div > h2 {
-  color: #981235;
-}
-div#servicios {
-  height: 1080px;
-}
-div#servicios > div > div:nth-child(3),
-div#servicios > div > div:nth-child(3) > div:nth-child(3) > div {
-  height: 333px;
-  /* Ajuste para la altura de las columnas de serviciosWeb OJO!!!*/
 }
 div#rellenoDer {
   background-color: #08a677;

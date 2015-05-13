@@ -345,6 +345,22 @@ p#parrafoTituloSeccion a {
 
 }
 
+#servicios > div > div:nth-child(2) > div > div > h2,
+#contacto > div > div:nth-child(1) > div > div > h2 {
+    color: #981235;
+}
+
+#servicios {
+    
+    height: 1080px;
+    
+    & > div > div:nth-child(3),
+    & > div > div:nth-child(3) > div:nth-child(3) > div {
+        height: 333px; /* Ajuste para la altura de las columnas de serviciosWeb OJO!!!*/
+    }
+
+}
+
 div.serviciosWeb {
     
     i {
@@ -382,22 +398,6 @@ div.serviciosWeb {
         border-radius: 0 20px 0 0;
         position: absolute;
         .sombraCaja;
-    }
-
-}
-
-div#servicios > div > div:nth-child(2) > div > div > h2,
-div#contacto > div > div:nth-child(1) > div > div > h2 {
-    color: @segundoColor;
-}
-
-div#servicios {
-    
-    height: 1080px;
-    
-    & > div > div:nth-child(3),
-    & > div > div:nth-child(3) > div:nth-child(3) > div {
-        height: 333px; /* Ajuste para la altura de las columnas de serviciosWeb OJO!!!*/
     }
 
 }
