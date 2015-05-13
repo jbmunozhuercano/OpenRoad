@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Oswald|Roboto);
+/* Mixims con parámetros */
 /* Estilos generales */
 * {
   margin: 0;
@@ -297,9 +298,6 @@ p#parrafoTituloSeccion {
   left: -170px;
   color: black;
 }
-div#datosContacto h3 {
-  font-size: 130%;
-}
 div#datosContacto p a,
 p#parrafoTituloSeccion a {
   color: #11749a;
@@ -332,11 +330,17 @@ div.serviciosWeb:nth-child(1) > div > div {
   position: absolute;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.75);
 }
+div.serviciosWeb:nth-child(1) > div > div ul li:nth-child(1) {
+  background-color: #6a0d25;
+}
 div.serviciosWeb:nth-child(2) > div > div {
   background-color: #11749a;
   position: absolute;
   margin-left: 333px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.75);
+}
+div.serviciosWeb:nth-child(2) > div > div ul li:nth-child(1) {
+  background-color: #0c516c;
 }
 div.serviciosWeb:nth-child(2) > div > div a {
   color: #08a677;
@@ -349,6 +353,9 @@ div.serviciosWeb:nth-child(3) > div > div {
   border-radius: 0 20px 0 0;
   position: absolute;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.75);
+}
+div.serviciosWeb:nth-child(3) > div > div ul li:nth-child(1) {
+  background-color: #067554;
 }
 div#rellenoDer {
   background-color: #08a677;
@@ -515,21 +522,27 @@ div#contacto div#googleMap {
 div#contacto > div > div:nth-child(3) {
   margin-top: 20px;
 }
-input.button {
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  border-color: #11749a;
+}
+form input.button {
   background-color: #11749a;
   border-color: #072f3e;
   text-transform: uppercase;
 }
-input.button:active,
-input.button:hover {
+form input.button:active,
+form input.button:hover {
   background-color: #08a677;
   border-color: #034531;
 }
 div#datosContacto div.panel.callout.radius {
-  border-color: #08a677;
-  background-color: rgba(8, 166, 119, 0.15);
+  border-color: #11749a;
+  background-color: transparent;
 }
 div#datosContacto h3 {
+  font-size: 130%;
   color: #981235;
 }
 div#datosContacto p {

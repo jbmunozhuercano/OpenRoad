@@ -3,7 +3,7 @@
 @primerColor: #11749a;
 @segundoColor: #981235;
 @tercerColor: #08a677;
-
+/* Mixims con parámetros */
 .sombraCaja( @x:5px; @y:5px; @desenfoque:5px; @color:fade(#000000,75%)) {
     box-shadow: @arguments;    
 }
@@ -330,10 +330,6 @@ p#parrafoTituloSeccion {
     color: black;
 }
 
-div#datosContacto h3 {
-    font-size: 130%;
-}
-
 div#datosContacto p a,
 p#parrafoTituloSeccion a {
     
@@ -372,34 +368,52 @@ div.serviciosWeb {
     }
 
     &:nth-child(1) > div > div {
+        
         background-color: @segundoColor;
         border-radius: 0 0 0 20px;
         position: absolute;
         .sombraCaja;
+        
+        ul li:nth-child(1) {
+            background-color: darken(@segundoColor,10%);
+        }
+
     }
 
     &:nth-child(2) > div > div {
+        
         background-color: @primerColor;
         position: absolute;
         margin-left: 333px; 
-        .sombraCaja
+        .sombraCaja;
+        
+        ul li:nth-child(1) {
+            background-color: darken(@primerColor,10%);
+        }
     }
 
     &:nth-child(2) > div > div a {
+        
         color: @tercerColor;
+        
+        &:hover {
+            color: @segundoColor;
+        }
+
     }
 
-    &:nth-child(2) > div > div a:hover {
-        color: @segundoColor;
-    }
-
+    
     &:nth-child(3) > div > div {
         background-color: @tercerColor;
         border-radius: 0 20px 0 0;
         position: absolute;
         .sombraCaja;
+        
+        ul li:nth-child(1) {
+            background-color: darken(@tercerColor,10%);
+        }
     }
-
+    
 }
 
 div#rellenoDer {
@@ -617,28 +631,39 @@ div#contacto {
 
 }
 
-input.button {
+form {
     
-    background-color: @primerColor;
-    border-color: darken(@primerColor,20%);
-    text-transform: uppercase;
-
-    &:active,
-    &:hover {
-        background-color: @tercerColor;
-        border-color: darken(@tercerColor,20%);
+    input[type="text"], 
+    input[type="email"],
+    textarea {        
+        border-color: @primerColor;
     }
+        
+    input.button {
 
+        background-color: @primerColor;
+        border-color: darken(@primerColor,20%);
+        text-transform: uppercase;
+
+        &:active,
+        &:hover {
+            background-color: @tercerColor;
+            border-color: darken(@tercerColor,20%);
+        }
+
+    }
+    
 }
 
 div#datosContacto {
     
     div.panel.callout.radius {
-        border-color: @tercerColor;
-        background-color: fade(@tercerColor,15%);
+        border-color: @primerColor;
+        background-color: transparent;
     }
 
     h3 {
+        font-size: 130%;
         color: @segundoColor;
     }
 
