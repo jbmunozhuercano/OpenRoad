@@ -1,3 +1,4 @@
+/* Funciones para el paralaje */
 /* detect touch */
 if ("ontouchstart" in window) {
     document.documentElement.className = document.documentElement.className + " touch";
@@ -131,7 +132,7 @@ function inicializarMapa() {
 
 google.maps.event.addDomListener(window, 'load', inicializarMapa);
 
-/* Funciones ajueste modo pestañas en vista para móvil */
+/* Funciones ajueste modo pestañas en vista para móvil en la sección de proyectos */
 var min = -4;
 var max = 4;
 
@@ -165,12 +166,42 @@ function generarEstilo() {
     }
 }
 
+function asignarEstilo() {
+    var descripcionProyecto = '';
+    var imagenProyecto = '';
+    
+    for(var i = 0; i < 6; i++ ) {
+    
+        descripcionProyecto = "#panel" + i + " > div";
+        imagenProyecto = "#panel" + i + " img.th.radius";
+        
+        $(descripcionProyecto).addClass(generarEstilo());
+        $(imagenProyecto).addClass(generarEstilo());
+        
+    }
+        
+}
+
+/* Validación de la expresión regular para navegadores que no soporten HTML5 pattern */
+$('input[placeholder]').blur(function() {
+    
+    $('div.error').remove();
+    var miPatron = $(this).attr('pattern');
+    var miPlaceholder = $(this).attr('placeholder');
+    var esValido = $(this).val().search(miPatron) >= 0;
+    
+    if(!esValido) {
+        $(this).focus();
+        $(this).after('<div class="error"><i>No es un nombre válido.</i></div>')
+    }
+});
+
 $(document).ready(function() {
     
     var ulProyectos = $("#nuestrosProyectos > div > ul");
     var estiloPorDefecto = "medium-block-grid-2 large-block-grid-3";
     var estiloTabs = "tabs-content";
-    var anchoPantalla = $(window).width();    
+    var anchoPantalla = $(window).width();
         
     if(anchoPantalla <= 640) {
         ulProyectos.toggleClass(estiloTabs,estiloPorDefecto);
@@ -178,15 +209,20 @@ $(document).ready(function() {
         if(ulProyectos.hasClass(estiloTabs)) { ulProyectos.toggleClass(estiloPorDefecto,estiloTabs); }
     }    
     
-    for(var i = 0; i < 6; i++ ) {
+    asignarEstilo();
     
-        var descripcionProyecto = "#panel" + i + " > div";
-        var imagenProyecto = "#panel" + i + " img.th.radius";
-        
-        $(descripcionProyecto).addClass(generarEstilo());
-        $(imagenProyecto).addClass(generarEstilo());
-        
-    }
+    /* Validación del formulario con JQuery para navegadores que no soporten HTML5 required */
+    $('#formContacto').submit(function() {
+        var abortar = false;
+        $('div.error').remove();
+        $(':input[required]').each(function() {
+            if($(this).val()==='') {
+                $(this).after('<div class="error"><i>El campo es obligatorio.</i></div>')
+                abortar = true;
+            }    
+        })
+        if (abortar) { return false; } else { return true; }
+    });
 
 });
 
