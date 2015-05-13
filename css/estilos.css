@@ -507,6 +507,9 @@ div#nuestrosProyectos div.proyectosDescripcion > div {
   transform: rotate(-6deg);
 }
 /* Inicio de los estilos de la sección contacto */
+div#contacto {
+  background: transparent url('../img/fondo_contacto.png') top center no-repeat;
+}
 div#contacto > div:nth-child(1) > div:nth-child(1) > div > div > p {
   color: black;
 }
@@ -517,7 +520,7 @@ div#contacto div#googleMap {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.75);
+  /*.sombraCaja;*/
 }
 div#contacto > div > div:nth-child(3) {
   margin-top: 20px;
@@ -622,6 +625,9 @@ Puntos de ruptura:
   div.serviciosWeb:nth-child(2) > div > div {
     margin-left: auto;
   }
+  div#contacto {
+    background: none;
+  }
 }
 @media screen and (min-width: 26.3125em) and (max-width: 40em) {
   div.content-a div#logoOpenRoad {
@@ -673,6 +679,9 @@ Puntos de ruptura:
   div.serviciosWeb:nth-child(2) > div > div {
     margin-left: auto;
   }
+  div#contacto {
+    background: none;
+  }
 }
 @media screen and (min-width: 40.063em) and (max-width: 64em) {
   nav > div > ul > li {
@@ -708,5 +717,13 @@ Puntos de ruptura:
   }
   div.serviciosWeb:nth-child(2) > div > div {
     margin-left: auto;
+  }
+  div#contacto {
+    background: none;
+  }
+}
+@media only screen and (min-width: 120.063em) {
+  div#rellenoDer {
+    height: 565px;
   }
 }

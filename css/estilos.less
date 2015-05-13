@@ -611,6 +611,8 @@ div#nuestrosProyectos {
 /* Inicio de los estilos de la sección contacto */
 div#contacto {
     
+    background: transparent url('../img/fondo_contacto.png') top center no-repeat;
+    
     & > div:nth-child(1) > div:nth-child(1) > div > div > p {
         color: black;
     }
@@ -622,7 +624,7 @@ div#contacto {
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 20px;
-        .sombraCaja;
+        /*.sombraCaja;*/
     }
 
     & > div > div:nth-child(3) {
@@ -779,6 +781,10 @@ Puntos de ruptura:
         
     }
     
+    div#contacto {
+        background: none;
+    }
+    
 }
 
 @media screen and (min-width:26.3125em) and (max-width:40em) {
@@ -853,6 +859,10 @@ Puntos de ruptura:
         }
      
     }
+    
+    div#contacto {
+        background: none;
+    }
 
 }
 
@@ -909,6 +919,18 @@ Puntos de ruptura:
             margin-left: auto;
         }
      
+    }
+    
+    div#contacto {
+        background: none;
+    }
+    
+}
+
+@media only screen and (min-width: 120.063em) { 
+    
+    div#rellenoDer {
+        height: 565px;
     }
     
 }
