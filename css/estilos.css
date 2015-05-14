@@ -484,7 +484,7 @@ div#nuestrosProyectos div.proyectosDescripcion > div {
 }
 /* Inicio de los estilos de la sección contacto */
 div#contacto {
-  background: transparent url('../img/fondo_contacto.png') top center no-repeat;
+  background: transparent url('../img/fondo_contacto.jpg') top center no-repeat;
 }
 div#contacto > div:nth-child(1) > div:nth-child(1) > div > div > p {
   color: black;
