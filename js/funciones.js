@@ -112,7 +112,7 @@ function inicializarMapa() {
 
     var lienzoMapa = new google.maps.Map($('#googleMap')[0], opcionesMapa);
 
-    var imagen = 'img/cursor-google-maps.png';
+    var imagen = 'img/cursor_google_maps.png';
 
     var miLatLong = new google.maps.LatLng(38.3417500, -0.5112905999999384);
 
