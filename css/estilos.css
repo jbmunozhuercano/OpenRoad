@@ -103,17 +103,17 @@ body div#tercerFondo {
   z-index: 9999;
 }
 body div#primerFondo {
-  background-image: url('../img/background-01.jpg');
+  background-image: url('../img/background_01.jpg');
 }
 body div#segundoFondo {
-  background-image: url('../img/background-02.jpg');
+  background-image: url('../img/background_02.jpg');
 }
 body div#tercerFondo {
-  background-image: url('../img/background-03.jpg');
+  background-image: url('../img/background_03.jpg');
 }
 /* Fin de los estilos de imagenes paralaje */
 div.content-a div#logoOpenRoad {
-  background: url('../img/sprite-openroad.png') 0px 0px no-repeat;
+  background: url('../img/sprite_openroad.png') 0px 0px no-repeat;
   width: 400px;
   height: 124px;
   display: block;
@@ -365,7 +365,7 @@ div#rellenoDer {
 }
 /* Inicio de los estilos sección de proyectos */
 div#proyectos {
-  background: #ffffff url("../img/textura-corcho.jpg") repeat;
+  background: #ffffff url("../img/textura_corcho.jpg") repeat;
 }
 div#proyectos > div:nth-child(1) > div > div > div > h2 {
   color: #11749a;
@@ -377,17 +377,17 @@ div#proyectos > div:nth-child(1) > div > div > div > p {
 .tabs .tab-title > a {
   width: 50px;
   height: 50px;
-  background: transparent url("../img/sprite-openroad.png") -150px -125px no-repeat;
+  background: transparent url("../img/sprite_openroad.png") -150px -125px no-repeat;
   padding-left: 20px;
   padding-right: 25px;
   padding-top: 14px;
   font-weight: bold;
 }
 .tabs .tab-title > a:hover {
-  background: transparent url("../img/sprite-openroad.png") -250px -125px no-repeat;
+  background: transparent url("../img/sprite_openroad.png") -250px -125px no-repeat;
 }
 .tabs .tab-title.active a {
-  background: transparent url('../img/sprite-openroad.png') -200px -125px no-repeat;
+  background: transparent url('../img/sprite_openroad.png') -200px -125px no-repeat;
 }
 /* Fin de los estilos de las pestañas de proyectos */
 div#nuestrosProyectos div.imagenWrap {
@@ -395,7 +395,7 @@ div#nuestrosProyectos div.imagenWrap {
 }
 div#nuestrosProyectos div.imagenWrap > div {
   position: absolute;
-  background: transparent url("../img/sprite-openroad.png") -250px -125px no-repeat;
+  background: transparent url("../img/sprite_openroad.png") -250px -125px no-repeat;
   height: 50px;
   width: 50px;
   top: -20px;
@@ -414,14 +414,14 @@ div#nuestrosProyectos h3 {
 div#nuestrosProyectos div.proyectosDescripcion {
   margin-top: 20px;
   padding: 10px;
-  background: #981235 url("../img/textura-carton.jpg") repeat;
+  background: #981235 url("../img/textura_carton.jpg") repeat;
   border: 2px solid #8b0f2f;
   border-radius: 5px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.75);
 }
 div#nuestrosProyectos div.proyectosDescripcion > div {
   display: block;
-  background: transparent url("../img/sprite-openroad.png") -150px -125px no-repeat;
+  background: transparent url("../img/sprite_openroad.png") -150px -125px no-repeat;
   height: 50px;
   width: 50px;
   margin-left: auto;
@@ -561,7 +561,7 @@ Puntos de ruptura:
 */
 @media only screen and (max-width: 26.25em) {
   div.content-a div#logoOpenRoad {
-    background: url('../img/sprite-openroad.png') 0px -125px no-repeat;
+    background: url('../img/sprite_openroad.png') 0px -125px no-repeat;
     width: 150px;
     height: 100px;
   }
@@ -612,7 +612,7 @@ Puntos de ruptura:
 }
 @media screen and (min-width: 26.3125em) and (max-width: 40em) {
   div.content-a div#logoOpenRoad {
-    background: url('../img/sprite-openroad.png') 0px -125px no-repeat;
+    background: url('../img/sprite_openroad.png') 0px -125px no-repeat;
     width: 150px;
     height: 100px;
   }
