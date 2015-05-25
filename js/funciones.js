@@ -201,29 +201,26 @@ jQuery(document).ready(function($) {
     var ulProyectos = $("#nuestrosProyectos > div > ul");
     var estiloPorDefecto = "medium-block-grid-2 large-block-grid-3";
     var estiloTabs = "tabs-content";
-    
-    $(window).resize( function () {
-        if ( $(window).width() <= 640 ) {
-            ulProyectos.toggleClass( estiloTabs, estiloPorDefecto );
-        } else {
-            if ( ulProyectos.hasClass( estiloTabs ) ) {
-                ulProyectos.toggleClass ( estiloPorDefecto, estiloTabs );
-            }
-        }
-    });
+    var anchoPantalla = $(window).width();
+        
+    if(anchoPantalla <= 640) {
+        ulProyectos.toggleClass(estiloTabs,estiloPorDefecto);
+    } else {
+        if(ulProyectos.hasClass(estiloTabs)) { ulProyectos.toggleClass(estiloPorDefecto,estiloTabs); }
+    }    
     
     asignarEstilo();
     
     $(window).scroll(function() {
         var elemento = $('.contain-to-grid');
         if ( $(window).scrollTop() > 210 )  {
-            elemento.addClass('fixed estilosMenuFijo');
-            $('.top-bar-section ul li:nth-child(1)').removeClass('active');
+            elemento.addClass('fixed estilosMenuFijo');            
         } else {
             elemento.removeClass('fixed estilosMenuFijo');
-            $('.top-bar-section ul li:nth-child(1)').addClass('active');
         }    
     });
+    
+    
     
     /* Validación del formulario con JQuery para navegadores que no soporten HTML5 required */
     $('#formContacto').submit(function() {
