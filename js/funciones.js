@@ -196,7 +196,7 @@ $('input[placeholder]').blur(function() {
     }
 });
 
-$(document).ready(function() {
+jQuery(document).ready(function($) {
     
     var ulProyectos = $("#nuestrosProyectos > div > ul");
     var estiloPorDefecto = "medium-block-grid-2 large-block-grid-3";
@@ -210,6 +210,17 @@ $(document).ready(function() {
     }    
     
     asignarEstilo();
+    
+    $(window).scroll(function() {
+        var elemento = $('.contain-to-grid');
+        if ( $(window).scrollTop() > 210 )  {
+            elemento.addClass('fixed estilosMenuFijo');            
+        } else {
+            elemento.removeClass('fixed estilosMenuFijo');
+        }    
+    });
+    
+    
     
     /* Validación del formulario con JQuery para navegadores que no soporten HTML5 required */
     $('#formContacto').submit(function() {
