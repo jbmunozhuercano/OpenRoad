@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Oswald|Roboto);
+/* Mixims */
 /* Mixims con parámetros */
 /* Estilos generales */
 * {
@@ -129,6 +130,13 @@ div.content-a div#logoOpenRoad {
 .top-bar-section ul li,
 .top-bar-section li:not(.has-form) a:not(.button) {
   background: none;
+}
+.contain-to-grid {
+  background: transparent;
+}
+.estilosMenuFijo {
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 99999;
 }
 nav > div > ul > li {
   margin: 0 50px;
@@ -547,7 +555,7 @@ div#pie > div > div > p {
   margin: 0px;
 }
 div#pie div p#copyright {
-  margin-top: 20px;
+  margin-top: 100px;
 }
 /* Inicio de las media queries */
 /*
@@ -564,6 +572,9 @@ Puntos de ruptura:
     background: url('../img/sprite_openroad.png') 0px -125px no-repeat;
     width: 150px;
     height: 100px;
+  }
+  .estilosMenuFijo {
+    border-radius: 10px;
   }
   .top-bar {
     border: 2px solid white;
@@ -615,6 +626,9 @@ Puntos de ruptura:
     background: url('../img/sprite_openroad.png') 0px -125px no-repeat;
     width: 150px;
     height: 100px;
+  }
+  .estilosMenuFijo {
+    border-radius: 10px;
   }
   .top-bar {
     border: 2px solid white;

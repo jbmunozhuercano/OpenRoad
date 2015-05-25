@@ -3,6 +3,7 @@
 @primerColor: #11749a;
 @segundoColor: #981235;
 @tercerColor: #08a677;
+/* Mixims */
 /* Mixims con parámetros */
 .sombraCaja( @x:5px; @y:5px; @desenfoque:5px; @color:fade(#000000,75%)) {
     box-shadow: @arguments;    
@@ -166,6 +167,15 @@ div.content-a div#logoOpenRoad {
 .top-bar-section ul li,
 .top-bar-section li:not(.has-form) a:not(.button) {
     background: none;
+}
+
+.contain-to-grid {
+    background: transparent;
+}
+
+.estilosMenuFijo {
+    background: fade(black,50%);
+    z-index: 99999;
 }
 
 nav > div > ul > li {
@@ -673,7 +683,7 @@ div#pie {
     }
 
     div p#copyright {
-        margin-top: 20px;
+        margin-top: 100px;
     }
     
 }
@@ -697,6 +707,10 @@ Puntos de ruptura:
         height: 100px;        
     }
     
+    .estilosMenuFijo {
+        border-radius: 10px;
+    }
+        
     .top-bar {
         border: 2px solid white;
         border-radius: 10px;
@@ -773,6 +787,10 @@ Puntos de ruptura:
         height: 100px;        
     }
     
+    .estilosMenuFijo {
+        border-radius: 10px;
+    }
+        
     .top-bar {
         border: 2px solid white;
         border-radius: 10px;
