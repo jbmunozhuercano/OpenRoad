@@ -212,12 +212,17 @@ jQuery(document).ready(function($) {
     asignarEstilo();
     
     $(window).scroll(function() {
-        var elemento = $('.contain-to-grid');
+        var padreNavMenu = $('.contain-to-grid');
+        
         if ( $(window).scrollTop() > 210 )  {
-            elemento.addClass('fixed estilosMenuFijo');            
+            padreNavMenu.addClass('fixed estilosMenuFijo');
+            $('.top-bar-section ul li:nth-child(1)').removeClass('active');
+            
         } else {
-            elemento.removeClass('fixed estilosMenuFijo');
-        }    
+            padreNavMenu.removeClass('fixed estilosMenuFijo');
+            $('.top-bar-section ul li:nth-child(1)').addClass('active');
+        }
+        
     });
     
     
